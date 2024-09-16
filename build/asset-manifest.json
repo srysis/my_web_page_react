@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.192954a2.css",
+    "main.js": "/static/js/main.e6807221.js",
+    "static/media/background-2.jpg": "/static/media/background-2.80247c86718607b7995e.jpg",
+    "static/media/gallery.png": "/static/media/gallery.b46f91b73ae2f6717c39.png",
+    "static/media/marry_house.png": "/static/media/marry_house.db477ea0dd3653d13a99.png",
+    "static/media/characters.png": "/static/media/characters.acd926f6caabe5e6178b.png",
+    "static/media/corona.png": "/static/media/corona.49f5bcfbdeb84ce18f48.png",
+    "static/media/dart.png": "/static/media/dart.174578d11530ff86a3b5.png",
+    "index.html": "/index.html",
+    "main.192954a2.css.map": "/static/css/main.192954a2.css.map",
+    "main.e6807221.js.map": "/static/js/main.e6807221.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.192954a2.css",
+    "static/js/main.e6807221.js"
+  ]
+}
