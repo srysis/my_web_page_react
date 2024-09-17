@@ -27,6 +27,10 @@ function Portfolio() {
 		}
 	}
 
+	function goToCharactersPage() {
+		navigate("/characters");
+	}
+
 	return (
 		<>
 			<h1>Portfolio</h1>
@@ -34,7 +38,7 @@ function Portfolio() {
 				Here resides the collection of my little projects that I've managed to complete in my learning process. 
 				Some are just implementations of existing designs, while some are the ideas that my made up on my own.
 			</h3>
-			<div className="link_to_project">
+			<div className="link_to_project" onClick={goToCharactersPage}>
 				<img src={characters_image} title="Characters" />
 				<div className="text">
 					<h3>Characters</h3>
