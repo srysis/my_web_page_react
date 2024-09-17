@@ -7,7 +7,14 @@ import marry_house_image from "../files/portfolio/marry_house.png"
 import "../style/portfolio/portfolio.css"
 import "../style/portfolio/portfolio-phone.css"
 
+
 function Portfolio() {
+	function onClickHandler(site) {
+		if (site === 1) {
+			window.open("site_1/site_1.html", "_self");
+		}
+	}
+
 	return (
 		<>
 			<h1>Portfolio</h1>
@@ -15,7 +22,7 @@ function Portfolio() {
 				Here resides the collection of my little projects that I've managed to complete in my learning process. 
 				Some are just implementations of existing designs, while some are the ideas that my made up on my own.
 			</h3>
-			<div className="link_to_project one">
+			<div className="link_to_project one" >
 				<img src={characters_image} title="Characters" />
 				<div className="text">
 					<h3>Characters</h3>
@@ -29,7 +36,7 @@ function Portfolio() {
 					<p>A page where you can see all images of my favorite characters.</p>
 				</div>
 			</div>
-			<div className="link_to_project three">
+			<div className="link_to_project three" onClick={() => onClickHandler(1)} >
 				<img src={dart_image} title="DART SERVICE MANAGER" />
 				<div className="text">
 					<h3>DART SERVICE MANAGER</h3>
