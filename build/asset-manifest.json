@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.a47d28e8.css",
-    "main.js": "./static/js/main.5667f9f5.js",
+    "main.css": "./static/css/main.91121bf3.css",
+    "main.js": "./static/js/main.c6c5d339.js",
     "static/media/background-2.jpg": "./static/media/background-2.80247c86718607b7995e.jpg",
     "static/media/gallery.png": "./static/media/gallery.b46f91b73ae2f6717c39.png",
     "static/media/marry_house.png": "./static/media/marry_house.db477ea0dd3653d13a99.png",
     "static/media/characters.png": "./static/media/characters.acd926f6caabe5e6178b.png",
     "static/media/corona.png": "./static/media/corona.49f5bcfbdeb84ce18f48.png",
     "static/media/dart.png": "./static/media/dart.174578d11530ff86a3b5.png",
+    "static/media/Jane.jpg": "./static/media/Jane.12d8634640376e811814.jpg",
+    "static/media/Alice.gif": "./static/media/Alice.37e54fa63020582d83ba.gif",
+    "static/media/Pandemonica.gif": "./static/media/Pandemonica.e034bf9bedc55cb9ba13.gif",
+    "static/media/Willow.png": "./static/media/Willow.e51f138e2602cafd0dd0.png",
     "index.html": "./index.html",
-    "main.a47d28e8.css.map": "./static/css/main.a47d28e8.css.map",
-    "main.5667f9f5.js.map": "./static/js/main.5667f9f5.js.map"
+    "main.91121bf3.css.map": "./static/css/main.91121bf3.css.map",
+    "main.c6c5d339.js.map": "./static/js/main.c6c5d339.js.map"
   },
   "entrypoints": [
-    "static/css/main.a47d28e8.css",
-    "static/js/main.5667f9f5.js"
+    "static/css/main.91121bf3.css",
+    "static/js/main.c6c5d339.js"
   ]
 }
