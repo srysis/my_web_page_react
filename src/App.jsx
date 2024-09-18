@@ -14,6 +14,8 @@ import Jane from "./pages/characters/jane"
 import Pandemonica from "./pages/characters/pandemonica"
 import Willow from "./pages/characters/willow"
 
+import Gallery from "./pages/gallery"
+
 import "./style/style.css"
 import "./style/style-phone.css"
 
@@ -28,6 +30,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/about_me" element={<AboutMe />} />
 					<Route path="/portfolio" element={<Portfolio />} />
+					<Route path="/gallery" element={<Gallery />} />
 					<Route path="/characters" element={<Characters />} />
 					<Route path="/characters/alice" element={<Alice />} />
 					<Route path="/characters/jane" element={<Jane />} />
