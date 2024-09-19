@@ -1,3 +1,8 @@
+import React from "react"
+
+import ImageContainer from "../../components/Characters/ImageContainer"
+import ImageFullscreenContainer from "../../components/Characters/ImageFullscreenContainer"
+
 import Alice_image from "../../files/characters/Alice.gif"
 
 import Alice_Steamdress from "../../files/characters/alice_skins/steamdress.jpg"
@@ -14,6 +19,22 @@ import Alice_Hattress from "../../files/characters/alice_skins/hattress.jpg"
 import Alice_Late_but_Lucky from "../../files/characters/alice_skins/late_but_lucky.jpg"
 
 function Alice() {
+	const [isInFullscreen, setFullscreen] = React.useState(false);
+	const [currentImage, setCurrentImage] = React.useState("");
+
+	function setFullscreenFunction(value) {
+		setFullscreen(value);
+		if (value) { 
+			document.body.style.overflow = 'hidden';
+		} else { 
+			document.body.style.overflow = 'visible'; 
+		}
+	}
+
+	function setCurrentImageFunction(source) {
+		setCurrentImage(source);
+	}
+
 	return (
 		<>
 			<h2 id = "char_name">Alice Liddell</h2>
@@ -97,26 +118,41 @@ function Alice() {
 					In chronological order:
 				</p>
 				<div id="alice_official_skins">
-					<div className="image_table_row">
-						<img src={Alice_Steamdress} title="Steamdress" alt="Alice Liddell in a Steamdress" />
-						<p>Steamdress <em className="image_caption">(appears in Hatter's Domain)</em></p>
-					</div>
-					<div className="image_table_row">
-						<img src={Alice_Siren} title="Siren" alt="Alice Liddell in a Siren dress" />
-						<p>Siren <br /><em className="image_caption">(appears in Deluded Depths)</em></p>
-					</div>
-					<div className="image_table_row">
-						<img src={Alice_Silkmaiden} title="Silkmaiden" alt="Alice Liddell in a Silkmaiden dress" />
-						<p>Silkmaiden <em className="image_caption">(appears in Oriental Grove)</em></p>
-					</div>
-					<div className="image_table_row">
-						<img src={Alice_Royal} title="Royal Dress" alt="Alice Liddell in a Royal Dress" />
-						<p>Royal Dress <em className="image_caption">(appears in Queensland)</em></p>
-					</div>
-					<div className="image_table_row">
-						<img src={Alice_Misstitched} title="Misstitched" alt="Alice Liddell in a Misstitched dress" />
-						<p>Misstitched <em className="image_caption">(appears in The Dollhouse)</em></p>
-					</div>
+					<ImageContainer 
+						image_source={Alice_Steamdress} 
+						text="Steamdress" 
+						altText="Alice in a Steamdress" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Alice_Siren} 
+						text="Siren" 
+						altText="Alice in a Siren dress" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Alice_Silkmaiden} 
+						text="Silkmaiden" 
+						altText="Alice in a Silkmaiden dress" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Alice_Royal} 
+						text="Royal Dress" 
+						altText="Alice in a Royal dress" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Alice_Misstitched} 
+						text="Misstitched" 
+						altText="Alice in a Misstitched dress" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
 				</div>
 				<div className="clear_float"></div>
 				<p>
@@ -124,30 +160,48 @@ function Alice() {
 					They do not appear in the first playthrough:
 				</p>
 				<div id="alice_dlc_skins">
-						<div className="image_table_row">
-							<img src={Alice_Caterpillar} title="Caterpillar" alt="Caterpillar Alice" className="black_white" />
-							<p>Caterpillar</p>
-						</div>
-						<div className="image_table_row">
-							<img src={Alice_Checkmate} title="Checkmate" alt="Checkmate Alice" />
-							<p>Checkmate</p>
-						</div>
-						<div className="image_table_row">
-							<img src={Alice_Cheshire} title="Cheshire" alt="Cheshire Alice" />
-							<p>Cheshire</p>
-						</div>
-						<div className="image_table_row">
-							<img src={Alice_Fleshmaiden} title="Fleshmaiden" alt="Fleshmaiden Alice" />
-							<p>Fleshmaiden</p>
-						</div>
-						<div className="image_table_row">
-							<img src={Alice_Hattress} title="Hattress" alt="Alice Hattress" />
-							<p>Hattress</p>
-						</div>
-						<div className="image_table_row">
-							<img src={Alice_Late_but_Lucky} title="Late, but Lucky" alt="Late, but Lucky Alice" />
-							<p>Late, but Lucky</p>
-						</div>
+					<ImageContainer 
+						image_source={Alice_Caterpillar} 
+						text="Caterpillar" 
+						altText="Caterpillar Alice" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Alice_Checkmate} 
+						text="Checkmate" 
+						altText="Checkmate Alice" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Alice_Cheshire} 
+						text="Cheshire" 
+						altText="Cheshire Alice" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Alice_Fleshmaiden} 
+						text="Fleshmaiden" 
+						altText="Fleshmaiden Alice" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Alice_Hattress} 
+						text="Hattress" 
+						altText="Hattress Alice" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Alice_Late_but_Lucky} 
+						text="Late, but Lucky" 
+						altText="Late, but Lucky Alice" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
 				</div>
 				<div className="clear_float"></div>
 			</section>
@@ -181,6 +235,7 @@ function Alice() {
 					<li>In the novel <em>Alice's Adventures in Wonderland</em> Alice is mentioned to have a brother. However, in games, Alice has no other sibling than Elizabeth.</li>
 				</ul>
 			</section>
+			{ isInFullscreen && <ImageFullscreenContainer setFullscreenFunction={setFullscreenFunction} currentImage={currentImage} character="Alice" /> }
 		</>
 	)
 }

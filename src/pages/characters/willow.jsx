@@ -1,3 +1,8 @@
+import React from "react"
+
+import ImageContainer from "../../components/Characters/ImageContainer"
+import ImageFullscreenContainer from "../../components/Characters/ImageFullscreenContainer"
+
 import Willow_image from "../../files/characters/Willow.png"
 
 import Willow_Shadow from "../../files/characters/willow_skins/Willow_Shadow.png"
@@ -10,6 +15,24 @@ import Willow_Swashbuckled from "../../files/characters/willow_skins/Willow_Swas
 
 
 function Willow() {
+	const [isInFullscreen, setFullscreen] = React.useState(false);
+	const [currentImage, setCurrentImage] = React.useState("");
+
+	function setFullscreenFunction(value) {
+		setFullscreen(value);
+
+		// hide scrollbar if fullscreen overlay is visible
+		if (value) { 
+			document.body.style.overflow = 'hidden';
+		} else { 
+			document.body.style.overflow = 'visible'; 
+		}
+	}
+
+	function setCurrentImageFunction(source) {
+		setCurrentImage(source);
+	}
+
 	return (
 		<>
 			<h2 id = "char_name">Willow</h2>
@@ -40,7 +63,6 @@ function Willow() {
 				<p>
 					She is usually depicted as helpful and joyful, curious to explore the unknown, woman, but can be quite reckless because of her unusual and careless passion 
 					for fire and arson. She doesn't seem to be attached to any of other characters, but the only thing she seems to be attached to is her trusty teddy bear Bernie. 
-						There is not much to tell about Willow's personality as there are no hidden layers within her "charming" personality.
 				</p>
 			</section>
 			<section>
@@ -53,34 +75,55 @@ function Willow() {
 					There are few cosmetic sets that can be equipped on Willow. Few examples are presented below.
 				</p>
 				<div id="willow_skins">
-					<div className="image_table_row">
-						<img src={Willow_Shadow} title="The Triumphant" alt="Willow Triumphant" />
-						<p>The Triumphant</p>
-					</div>
-					<div className="image_table_row">
-						<img src={Willow_Formal} title="The Guest of Honor" alt="Formal Willow" />
-						<p>The Guest of Honor</p>
-					</div>
-					<div className="image_table_row">
-						<img src={Willow_Woeful} title="Woeful Willow" alt="Woeful Willow" />
-						<p>The Woeful</p>
-					</div>
-					<div className="image_table_row">
-						<img src={Willow_Forlorn_Doll} title="The Forlorn Doll" alt="Willow The Forlorn Doll" />
-						<p>The Forlorn Doll</p>
-					</div>
-					<div className="image_table_row">
-						<img src={Willow_Roseate} title="The Roseate" alt="Willow Roseate" />
-						<p>The Roseate</p>
-					</div>
-					<div className="image_table_row">
-						<img src={Willow_Snowfallen} title="The Snowfallen" alt="Snowfallen Willow" />
-						<p>The Snowfallen</p>
-					</div>
-					<div className="image_table_row">
-						<img src={Willow_Swashbuckled} title="The Swashbuckled" alt="Swashbuckled Willow" />
-						<p>The Swashbuckled</p>
-					</div>
+					<ImageContainer 
+						image_source={Willow_Shadow} 
+						text="The Triumphant" 
+						altText="Willow The Triumphant" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Willow_Formal} 
+						text="The Guest of Honor" 
+						altText="Formal Willow" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Willow_Woeful} 
+						text="The Woeful" 
+						altText="Woeful Willow" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Willow_Forlorn_Doll} 
+						text="The Forlorn Doll" 
+						altText="Willow The Forlorn Doll" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Willow_Roseate} 
+						text="The Roseate" 
+						altText="Willow Roseate" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Willow_Snowfallen} 
+						text="The Snowfallen" 
+						altText="Snowfallen Willow" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
+					<ImageContainer 
+						image_source={Willow_Swashbuckled} 
+						text="The Swashbuckled" 
+						altText="Swashbuckled Willow" 
+						setFullscreenFunction={setFullscreenFunction}
+						setCurrentImageFunction={setCurrentImageFunction} 
+					/>
 				</div>
 				<div className="clear_float"></div>
 			</section>
@@ -99,6 +142,7 @@ function Willow() {
 					</li>
 				</ul>
 			</section>
+			{ isInFullscreen && <ImageFullscreenContainer setFullscreenFunction={setFullscreenFunction} currentImage={currentImage} character="Willow" /> }
 		</>
 	)
 }
