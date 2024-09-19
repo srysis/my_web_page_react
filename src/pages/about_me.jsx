@@ -1,9 +1,9 @@
-
+import { Link } from 'react-router-dom'
 
 function AboutMe() {
 	return (
 		<>
-			<h2>
+			<h2 id="title">
 				This page contains more personal information about me as a person, as well as my interests and a bit of life stories.
 			</h2>
 			<h3>About me:</h3>
@@ -72,10 +72,10 @@ function AboutMe() {
 			<p>
 				There is a list of certain characters that pretty much defined my worldview. They also helped me in my most desperate times, so consider these my comfort characters. These are:
 				<ul>
-					<li><a href="alice.html">Alice Liddell</a>, American McGee's version</li>
-					<li><a href="willow.html">Willow</a> from Don't Starve</li>
-					<li><a href="pandemonica.html">Pandemonica</a> from Helltaker</li>
-					<li><a href="jane.html">Jane</a> from "Jane The Killer" creepypasta</li>
+					<li><Link to="/characters/alice/" onClick={() => window.scrollTo(0, 0)} >Alice Liddell</Link>, American McGee's version</li>
+					<li><Link to="/characters/willow" onClick={() => window.scrollTo(0, 0)} >Willow</Link> from Don't Starve</li>
+					<li><Link to="/characters/pandemonica" onClick={() => window.scrollTo(0, 0)} >Pandemonica</Link> from Helltaker</li>
+					<li><Link to="/characters/jane" onClick={() => window.scrollTo(0, 0)} >Jane</Link> from "Jane The Killer" creepypasta</li>
 				</ul>
 			</p>
 			<p>You can click on one of their names to learn more about corresponding characters.</p>
