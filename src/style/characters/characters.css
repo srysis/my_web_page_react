@@ -178,11 +178,13 @@ img.image_fullscreen.willow, img.image_fullscreen.alice {
 }
 img.image_fullscreen.willow {
 	padding: 50px;
-	margin-top: 13%;
+	margin-top: 12.5%;
 	width: 25%;
+	height: auto;
 }
 img.image_fullscreen.alice {
 	padding: 30px;
-	margin-top: 5%;
+	margin-top: 3.5%;
 	width: 18%;
+	height: auto;
 }
