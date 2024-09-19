@@ -38,7 +38,7 @@ function GalleryContainer({character, toggleFullscreenFunction, toggleCharacterI
 		const image_containers = imageList.map(function(item) {
 			return (
 				<div className="image_container">
-					<img src={item} onClick={(event) => { toggleFullscreenFunction(true); toggleCharacterImageFunction(item) }} />
+					<img src={item} onClick={(event) => { toggleFullscreenFunction(true); toggleCharacterImageFunction(item); event.target.classList.add("current_image") }} />
 				</div>
 			)
 		})
