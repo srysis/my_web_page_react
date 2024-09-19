@@ -19,6 +19,9 @@ main {
 	border-radius: 5px;
 	padding: 2% 3%;
 }
+h2#title {
+	font-size: 1.5em;
+}
 h3 {
 	font-size: 1.4em;
 }
