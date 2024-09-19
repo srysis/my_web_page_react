@@ -76,7 +76,7 @@ div#image_fullscreen_overlay_container.active {
 	justify-content: space-between;
 }
 #prev_photo, #next_photo {
-	height: 88%;
+	height: 25%;
 	margin: auto 0;
 	border: none;
 	padding: 3.5%;
