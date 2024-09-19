@@ -32,6 +32,7 @@ function GalleryContainer({character, toggleFullscreenFunction, toggleCharacterI
 			break;
 		}
 
+		
 		const imageList = images_directory.keys().map(image => images_directory(image));
 
 		const image_containers = imageList.map(function(item) {
