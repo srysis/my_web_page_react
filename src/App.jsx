@@ -19,9 +19,6 @@ import Gallery from "./pages/gallery"
 import "./style/style.css"
 import "./style/style-phone.css"
 
-import "./style/characters/characters.css"
-import "./style/characters/characters-phone.css"
-
 function App() {
 	return (
 		<Router>
