@@ -5,6 +5,9 @@ import Jane from "../../files/characters/Jane.jpg"
 import Pandemonica from "../../files/characters/Pandemonica.gif"
 import Willow from "../../files/characters/Willow.png"
 
+import "../../style/characters/characters.css"
+import "../../style/characters/characters-phone.css"
+
 function Characters() {
 	const navigate = useNavigate();
 
