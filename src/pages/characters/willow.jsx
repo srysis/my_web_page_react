@@ -21,11 +21,13 @@ function Willow() {
 	function setFullscreenFunction(value) {
 		setFullscreen(value);
 
-		// hide scrollbar if fullscreen overlay is visible
+		// hide scrollbar and adjust margin if fullscreen overlay is visible
 		if (value) { 
 			document.body.style.overflow = 'hidden';
+			document.body.style.marginRight = 0.4 + "%";
 		} else { 
-			document.body.style.overflow = 'visible'; 
+			document.body.style.overflow = 'visible';
+			document.body.style.marginRight = 0;
 		}
 	}
 
