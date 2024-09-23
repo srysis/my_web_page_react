@@ -8,7 +8,7 @@ function GalleryFullscreen({toggleFullscreenFunction, currentImage}) {
 
 		if (current_image.parentElement.nextElementSibling != null) {
 			current_image.classList.toggle("current_image");
-			current_image.parentElement.nextElementSibling.firstElementChild.classList.toggle("current_image"); 	// don't ask.
+			current_image.parentElement.nextElementSibling.firstElementChild.classList.toggle("current_image");
 
 			let image_container = document.querySelector("img.image_fullscreen");
 			image_container.setAttribute("src", document.querySelector("img.current_image").getAttribute("src"));
@@ -20,7 +20,7 @@ function GalleryFullscreen({toggleFullscreenFunction, currentImage}) {
 
 		if (current_image.parentElement.previousElementSibling != null) {
 			current_image.classList.toggle("current_image");
-			current_image.parentElement.previousElementSibling.firstElementChild.classList.toggle("current_image"); // don't ask.
+			current_image.parentElement.previousElementSibling.firstElementChild.classList.toggle("current_image");
 
 			let image_container = document.querySelector("img.image_fullscreen");
 			image_container.setAttribute("src", document.querySelector("img.current_image").getAttribute("src"));
