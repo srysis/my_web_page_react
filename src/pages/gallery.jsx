@@ -8,6 +8,7 @@ import cross from "../files/cross.svg"
 
 import "../style/gallery/gallery.css"
 import "../style/gallery/gallery-phone.css"
+import "../style/shared.css"
 
 function Gallery() {
 	const [isGalleryActive, toggleGallery] = React.useState(false);

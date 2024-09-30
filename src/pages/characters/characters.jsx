@@ -7,6 +7,7 @@ import Willow from "../../files/characters/Willow.png"
 
 import "../../style/characters/characters.css"
 import "../../style/characters/characters-phone.css"
+import "../../style/shared.css"
 
 function Characters() {
 	const navigate = useNavigate();
