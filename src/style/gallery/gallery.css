@@ -58,30 +58,6 @@ div.image_container > img:hover {
 	cursor: pointer;
 }
 
-
-div#image_fullscreen_overlay_container {
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: 2;
-	background: rgba(0, 0, 0, 0.98);
-	
-}
-div#image_fullscreen_overlay_container.active {
-	display: flex;
-	justify-content: space-between;
-	animation: scale_container 0.2s;
-}
-@keyframes scale_container {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
 #prev_photo, #next_photo {
 	height: 25%;
 	margin: auto 0;
@@ -106,25 +82,4 @@ div#image_fullscreen_overlay_container.active {
 	width: 36px;
 	height: 36px;
 	filter: invert(100%) sepia(63%) saturate(0%) hue-rotate(65deg) brightness(105%) contrast(101%);
-}
-img.image_fullscreen {
-	display: block;
-	width: 60vw;
-	height: 80vh;
-	object-fit: contain;
-	padding: 30px;
-	border: 2px solid gray;
-	border-radius: 5px;
-	margin: auto;
-	margin-top: 5.5%;
-	background-color: black;
-	animation: scale_image 0.2s;
-}
-@keyframes scale_image {
-	0% {
-		transform: scale(0);
-	}
-	100% {
-		transform: scale(1);
-	}
 }
