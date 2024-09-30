@@ -22,7 +22,7 @@ function Alice() {
 	const [isInFullscreen, setFullscreen] = React.useState(false);
 	const [currentImage, setCurrentImage] = React.useState("");
 
-	function setFullscreenFunction(value) {
+	function toggleFullscreenFromChildComponent(value) {
 		setFullscreen(value);
 
 		// hide scrollbar and adjust margin if fullscreen overlay is visible
@@ -35,7 +35,7 @@ function Alice() {
 		}
 	}
 
-	function setCurrentImageFunction(source) {
+	function setCurrentImageFromChildComponent(source) {
 		setCurrentImage(source);
 	}
 
@@ -126,36 +126,36 @@ function Alice() {
 						image_source={Alice_Steamdress} 
 						text="Steamdress" 
 						altText="Alice in a Steamdress" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Alice_Siren} 
 						text="Siren" 
 						altText="Alice in a Siren dress" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Alice_Silkmaiden} 
 						text="Silkmaiden" 
 						altText="Alice in a Silkmaiden dress" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Alice_Royal} 
 						text="Royal Dress" 
 						altText="Alice in a Royal dress" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Alice_Misstitched} 
 						text="Misstitched" 
 						altText="Alice in a Misstitched dress" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 				</div>
 				<div className="clear_float"></div>
@@ -168,43 +168,43 @@ function Alice() {
 						image_source={Alice_Caterpillar} 
 						text="Caterpillar" 
 						altText="Caterpillar Alice" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Alice_Checkmate} 
 						text="Checkmate" 
 						altText="Checkmate Alice" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Alice_Cheshire} 
 						text="Cheshire" 
 						altText="Cheshire Alice" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Alice_Fleshmaiden} 
 						text="Fleshmaiden" 
 						altText="Fleshmaiden Alice" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Alice_Hattress} 
 						text="Hattress" 
 						altText="Hattress Alice" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Alice_Late_but_Lucky} 
 						text="Late, but Lucky" 
 						altText="Late, but Lucky Alice" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 				</div>
 				<div className="clear_float"></div>
@@ -239,7 +239,7 @@ function Alice() {
 					<li>In the novel <em>Alice's Adventures in Wonderland</em> Alice is mentioned to have a brother. However, in games, Alice has no other sibling than Elizabeth.</li>
 				</ul>
 			</section>
-			{ isInFullscreen && <ImageFullscreenContainer setFullscreenFunction={setFullscreenFunction} currentImage={currentImage} character="Alice" /> }
+			{ isInFullscreen && <ImageFullscreenContainer toggleFullscreenFunction={toggleFullscreenFromChildComponent} currentImage={currentImage} character="Alice" /> }
 		</>
 	)
 }

@@ -18,7 +18,7 @@ function Willow() {
 	const [isInFullscreen, setFullscreen] = React.useState(false);
 	const [currentImage, setCurrentImage] = React.useState("");
 
-	function setFullscreenFunction(value) {
+	function toggleFullscreenFromChildComponent(value) {
 		setFullscreen(value);
 
 		// hide scrollbar and adjust margin if fullscreen overlay is visible
@@ -31,7 +31,7 @@ function Willow() {
 		}
 	}
 
-	function setCurrentImageFunction(source) {
+	function setCurrentImageFromChildComponent(source) {
 		setCurrentImage(source);
 	}
 
@@ -81,50 +81,50 @@ function Willow() {
 						image_source={Willow_Shadow} 
 						text="The Triumphant" 
 						altText="Willow The Triumphant" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Willow_Formal} 
 						text="The Guest of Honor" 
 						altText="Formal Willow" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Willow_Woeful} 
 						text="The Woeful" 
 						altText="Woeful Willow" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Willow_Forlorn_Doll} 
 						text="The Forlorn Doll" 
 						altText="Willow The Forlorn Doll" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Willow_Roseate} 
 						text="The Roseate" 
 						altText="Willow Roseate" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Willow_Snowfallen} 
 						text="The Snowfallen" 
 						altText="Snowfallen Willow" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 					<ImageContainer 
 						image_source={Willow_Swashbuckled} 
 						text="The Swashbuckled" 
 						altText="Swashbuckled Willow" 
-						setFullscreenFunction={setFullscreenFunction}
-						setCurrentImageFunction={setCurrentImageFunction} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent}
+						setCurrentImageFunction={setCurrentImageFromChildComponent} 
 					/>
 				</div>
 				<div className="clear_float"></div>
@@ -144,7 +144,7 @@ function Willow() {
 					</li>
 				</ul>
 			</section>
-			{ isInFullscreen && <ImageFullscreenContainer setFullscreenFunction={setFullscreenFunction} currentImage={currentImage} character="Willow" /> }
+			{ isInFullscreen && <ImageFullscreenContainer toggleFullscreenFunction={toggleFullscreenFromChildComponent} currentImage={currentImage} character="Willow" /> }
 		</>
 	)
 }

@@ -1,6 +1,6 @@
 import React from "react"
 
-function GalleryContainer({character, toggleFullscreenFunction, toggleCharacterImageFunction}) {
+function GalleryContainer({character, setCurrentCharacterImageFunction, toggleFullscreenFunction}) {
 
 	/*// function that shuffles an object. it is used to randomize the order of images each time a user clicks on any of the characters
 	function shuffle(objectList) {
@@ -38,7 +38,7 @@ function GalleryContainer({character, toggleFullscreenFunction, toggleCharacterI
 		const image_containers = imageList.map(function(item) {
 			return (
 				<div className="image_container">
-					<img src={item} onClick={(event) => { toggleFullscreenFunction(true); toggleCharacterImageFunction(item); event.target.classList.add("current_image") }} />
+					<img src={item} onClick={(event) => { toggleFullscreenFunction(true); setCurrentCharacterImageFunction(item); event.target.classList.add("current_image") }} />
 				</div>
 			)
 		})

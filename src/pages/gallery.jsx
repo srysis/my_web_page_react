@@ -11,13 +11,13 @@ import "../style/gallery/gallery-phone.css"
 
 function Gallery() {
 	const [isGalleryActive, toggleGallery] = React.useState(false);
-	const [isInFullScreen, toggleFullScreen] = React.useState(false);
+	const [isInFullscreen, toggleFullscreen] = React.useState(false);
 
 	const [currentCharacter, setCurrentCharacter] = React.useState("");
 	const [currentCharacterImage, setCurrentCharacterImage] = React.useState("");
 
-	function toggleFullscreenWrap(value) {
-		toggleFullScreen(value);
+	function toggleFullscreenFromChildComponent(value) {
+		toggleFullscreen(value);
 
 		// hide scrollbar and adjust margin if fullscreen overlay is visible
 		if (value) { 
@@ -29,15 +29,15 @@ function Gallery() {
 		}
 	}
 
-	function toggleGalleryWrap(value) {
+	function toggleGalleryFromChildComponent(value) {
 		toggleGallery(value);
 	}
 
-	function toggleCharacter(character) {
+	function setCharacterFromChildComponent(character) {
 		setCurrentCharacter(character);
 	}
 
-	function toggleCharacterImage(characterImage) {
+	function setCharacterImageFromChildComponent(characterImage) {
 		setCurrentCharacterImage(characterImage);
 	}
 
@@ -45,9 +45,15 @@ function Gallery() {
 		<>
 			<h1>Gallery</h1>
 			<hr className="header_hr" />
-			<GallerySwitches toggleGalleryFunction={toggleGalleryWrap} toggleCharacterFunction={toggleCharacter} />
-			{ isGalleryActive && <GalleryContainer character={currentCharacter} toggleCharacterImageFunction={toggleCharacterImage} toggleFullscreenFunction={toggleFullscreenWrap} /> }
-			{ isInFullScreen && <GalleryFullscreen toggleFullscreenFunction={toggleFullscreenWrap} currentImage={currentCharacterImage} /> }
+			<GallerySwitches toggleGalleryFunction={toggleGalleryFromChildComponent} setCharacterFunction={setCharacterFromChildComponent} />
+			{ isGalleryActive 
+				&& <GalleryContainer 
+						character={currentCharacter} 
+						setCurrentCharacterImageFunction={setCharacterImageFromChildComponent} 
+						toggleFullscreenFunction={toggleFullscreenFromChildComponent} 
+					/> 
+			}
+			{ isInFullscreen && <GalleryFullscreen toggleFullscreenFunction={toggleFullscreenFromChildComponent} currentImage={currentCharacterImage} /> }
 		</>
 	)
 }
