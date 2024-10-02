@@ -20,29 +20,29 @@ function AboutMe() {
 			<p>
 				I mostly play games in free time. My favorite genre is action, if to be specific <abbr title="First-person shooter">FPS</abbr>. 
 				I don't play too many games these days, but the ones I really enjoy include:
-				<ul>
-					<li><del>Team Fortress 2</del></li>
-					<li>Warhammer: Vermintide 2</li>
-					<li>Dead by Daylight</li>
-					<li><del>Don't Starve Together</del></li>
-					<li>Fallout 76</li>
-				</ul>
 			</p>
+			<ul>
+				<li><del>Team Fortress 2</del></li>
+				<li>Warhammer: Vermintide 2</li>
+				<li>Dead by Daylight</li>
+				<li><del>Don't Starve Together</del></li>
+				<li>Fallout 76</li>
+			</ul>
 			<p>
 				I've played more games through my lifespan, but these three are the main ones for me right now. Because I don't have a job yet and don't have any hobbies, I play very often. 
 				I hope this will change some day.
 			</p>
 			<p>
 				I rarely watch movies. Probably because I am not really excited about sitting in one place for almost two hours straight, but if I had to pick ones that I really like, these will be:
-				<ul>
-					<li>Addams Family(1991 and 1993)</li>
-					<li>Charlie and the Chocolate Factory</li>
-					<li>Firestarter</li>
-					<li>What We Do in the Shadows</li>
-					<li>The Master and Margarita</li>
-					<li>Ringu (both parts, original japanese version)</li>
-				</ul>
 			</p>
+			<ul>
+				<li>Addams Family(1991 and 1993)</li>
+				<li>Charlie and the Chocolate Factory</li>
+				<li>Firestarter</li>
+				<li>What We Do in the Shadows</li>
+				<li>The Master and Margarita</li>
+				<li>Ringu (both parts, original japanese version)</li>
+			</ul>
 			<p>
 				I enjoy listening to music from time to time, but I don't really want to talk about it. I consider music to be something that is very personal, 
 				so I won't go into detail about bands and genres that I like listening to.
@@ -58,7 +58,7 @@ function AboutMe() {
 			</p>
 			<p>
 				If you, by some chance, want to try it out, you can download the last playable build using 
-				<a href="https://drive.google.com/file/d/1DLWaHVPh_8DpjDflodhaRjixQjnl7w5z/view?usp=drive_link" target="_blank"><em>this</em></a> 
+				<a href="https://drive.google.com/file/d/1DLWaHVPh_8DpjDflodhaRjixQjnl7w5z/view?usp=drive_link" target="_blank"><em> this </em></a> 
 				link, though I am not sure why you would want to do that. Keep in mind, that it is not very polished, so expect bugs and "clunkyness".
 			</p>
 			<p>
@@ -71,13 +71,13 @@ function AboutMe() {
 			</p>
 			<p>
 				There is a list of certain characters that pretty much defined my worldview. They also helped me in my most desperate times, so consider these my comfort characters. These are:
-				<ul>
-					<li><Link to="/characters/alice/" onClick={() => window.scrollTo(0, 0)} >Alice Liddell</Link>, American McGee's version</li>
-					<li><Link to="/characters/willow" onClick={() => window.scrollTo(0, 0)} >Willow</Link> from Don't Starve</li>
-					<li><Link to="/characters/pandemonica" onClick={() => window.scrollTo(0, 0)} >Pandemonica</Link> from Helltaker</li>
-					<li><Link to="/characters/jane" onClick={() => window.scrollTo(0, 0)} >Jane</Link> from "Jane The Killer" creepypasta</li>
-				</ul>
 			</p>
+			<ul>
+				<li><Link to="/characters/alice/" onClick={() => window.scrollTo(0, 0)} >Alice Liddell</Link>, American McGee's version</li>
+				<li><Link to="/characters/willow" onClick={() => window.scrollTo(0, 0)} >Willow</Link> from Don't Starve</li>
+				<li><Link to="/characters/pandemonica" onClick={() => window.scrollTo(0, 0)} >Pandemonica</Link> from Helltaker</li>
+				<li><Link to="/characters/jane" onClick={() => window.scrollTo(0, 0)} >Jane</Link> from "Jane The Killer" creepypasta</li>
+			</ul>
 			<p>You can click on one of their names to learn more about corresponding characters.</p>
 			<p>
 				That's pretty much it about me. I hope you found this short bio at least remotely interesting. Feel free to explore the rest of the web-site. Enjoy your stay.
