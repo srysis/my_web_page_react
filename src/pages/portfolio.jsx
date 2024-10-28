@@ -5,6 +5,7 @@ import gallery_image from "../files/portfolio/gallery.png"
 import dart_image from "../files/portfolio/dart.png"
 import corona_image from "../files/portfolio/corona.png"
 import marry_house_image from "../files/portfolio/marry_house.png"
+import car_game_image from "../files/portfolio/car_game.png"
 
 import "../style/portfolio/portfolio.css"
 import "../style/portfolio/portfolio-phone.css"
@@ -16,13 +17,16 @@ function Portfolio() {
 	function onClickHandler(site) {
 		switch (site) {
 		case 1:
-			window.open("site_1/site_1.html", "_self");
+			window.open("site_1/site_1.html", "_blank");
 			break;
 		case 2:
-			window.open("site_2/site_2.html", "_self");
+			window.open("site_2/site_2.html", "_blank");
 			break;
 		case 3:
-			window.open("site_3/site_3.html", "_self");
+			window.open("site_3/site_3.html", "_blank");
+			break;
+		case 4:
+			window.open("site_4/site_4.html", "_blank");
 			break;
 		}
 	}
@@ -66,6 +70,13 @@ function Portfolio() {
 				<img src={marry_house_image} title="MARRY HOUSE" />
 				<div className="text">
 					<h3>MARRY HOUSE</h3>
+					<p>A landing page template that I have implemented and adapted to smaller screens.</p>
+				</div>
+			</div>
+			<div className="link_to_project" onClick={() => onClickHandler(4)}>
+				<img src={car_game_image} title="SPEED CAR GAME" />
+				<div className="text">
+					<h3>SPEED CAR GAME</h3>
 					<p>A landing page template that I have implemented and adapted to smaller screens.</p>
 				</div>
 			</div>
