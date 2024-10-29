@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my_web_page_react/static/css/main.1aead2a6.css",
-    "main.js": "/my_web_page_react/static/js/main.9e3f6e9a.js",
+    "main.css": "/my_web_page_react/static/css/main.369f6c0d.css",
+    "main.js": "/my_web_page_react/static/js/main.b3d0b7e4.js",
     "static/media/12.png": "/my_web_page_react/static/media/12.c543ff4e0ac6eccf2684.png",
     "static/media/15.png": "/my_web_page_react/static/media/15.c2aac83735380c4188f8.png",
     "static/media/8.png": "/my_web_page_react/static/media/8.65ec37eb88023b677c7c.png",
@@ -54,11 +54,11 @@
     "static/media/cross.svg": "/my_web_page_react/static/media/cross.a6b9ffc5deeeb58064e76e9c4fe167d5.svg",
     "static/media/bars-solid.svg": "/my_web_page_react/static/media/bars-solid.4ada9cff8def51a13630540467bf0937.svg",
     "index.html": "/my_web_page_react/index.html",
-    "main.1aead2a6.css.map": "/my_web_page_react/static/css/main.1aead2a6.css.map",
-    "main.9e3f6e9a.js.map": "/my_web_page_react/static/js/main.9e3f6e9a.js.map"
+    "main.369f6c0d.css.map": "/my_web_page_react/static/css/main.369f6c0d.css.map",
+    "main.b3d0b7e4.js.map": "/my_web_page_react/static/js/main.b3d0b7e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.1aead2a6.css",
-    "static/js/main.9e3f6e9a.js"
+    "static/css/main.369f6c0d.css",
+    "static/js/main.b3d0b7e4.js"
   ]
 }
