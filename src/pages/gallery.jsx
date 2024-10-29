@@ -4,11 +4,9 @@ import GallerySwitches from "../components/Gallery/GallerySwitches"
 import GalleryContainer from "../components/Gallery/GalleryContainer"
 import GalleryFullscreen from "../components/Gallery/GalleryFullscreen"
 
-import cross from "../files/cross.svg"
-
-import "../style/gallery/gallery.css"
-import "../style/gallery/gallery-phone.css"
-import "../style/shared.css"
+import "../style/gallery/gallery.scss"
+import "../style/gallery/gallery-phone.scss"
+import "../style/shared.scss"
 
 function Gallery() {
 	const [isGalleryActive, toggleGallery] = React.useState(false);

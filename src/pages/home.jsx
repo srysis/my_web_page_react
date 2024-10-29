@@ -3,7 +3,7 @@
 function Home() {
 	return (
 		<>
-			<h2 style={{ "fontSize" : 1.5 + "em" }}>
+			<h2>
 				Welcome to my web-site. On this site I test my skills as well as develop a small portfolio for future employers. <br />
 				It will improve over time and more content will appear. <br />
 				This page contains only general information. The more elaborate version can be found by clicking on the link in the header 

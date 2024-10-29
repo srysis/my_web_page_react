@@ -159,7 +159,7 @@ function Alice() {
 					/>
 				</div>
 				<div className="clear_float"></div>
-				<p>
+				<p style= {{ "marginTop": 40 + "px" }}>
 					There are also some bonus dresses that are available after completing the game. They give bonuses to the player if worn, that vary from being overpowered to pretty useless. 
 					They do not appear in the first playthrough:
 				</p>

@@ -16,8 +16,8 @@ import Willow from "./pages/characters/willow"
 
 import Gallery from "./pages/gallery"
 
-import "./style/style.css"
-import "./style/style-phone.css"
+import "./style/style.scss"
+import "./style/style-phone.scss"
 
 function App() {
 	return (

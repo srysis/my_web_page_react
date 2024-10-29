@@ -7,8 +7,8 @@ import corona_image from "../files/portfolio/corona.png"
 import marry_house_image from "../files/portfolio/marry_house.png"
 import car_game_image from "../files/portfolio/car_game.png"
 
-import "../style/portfolio/portfolio.css"
-import "../style/portfolio/portfolio-phone.css"
+import "../style/portfolio/portfolio.scss"
+import "../style/portfolio/portfolio-phone.scss"
 
 
 function Portfolio() {
