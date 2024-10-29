@@ -1,0 +1,47 @@
+main {
+	h1 {
+		text-align: center;
+	}
+}
+
+div.link_to_project {
+	display: flex;
+	margin: 1% 0;
+	border: 5px solid #222;
+	border-radius: 10px;
+	padding: 20px;
+	text-decoration: none;
+	background-color: #000;
+	cursor: pointer;
+
+	div.text {
+		margin-left: 2%;
+		font-size: 1.2em;
+
+		h3 {
+			text-align: left;
+		}
+
+		p {
+			padding: 0;
+			text-indent: 0;
+		}
+	}
+
+	img {
+		width: 10%;
+		height: 15vh;
+		object-fit: cover;
+		object-position: 50% 10%;
+		border: 2px solid #222;
+		padding: 5px;
+	}
+}
+div.link_to_project::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.link_to_project:hover {
+	background-color: #333;
+}
