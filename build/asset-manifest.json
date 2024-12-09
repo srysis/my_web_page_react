@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.650af280.css",
-    "main.js": "./static/js/main.86a1c605.js",
+    "main.js": "./static/js/main.fbc39d1f.js",
     "static/media/12.png": "./static/media/12.c543ff4e0ac6eccf2684.png",
     "static/media/15.png": "./static/media/15.c2aac83735380c4188f8.png",
     "static/media/8.png": "./static/media/8.65ec37eb88023b677c7c.png",
@@ -41,6 +41,7 @@
     "static/media/dart.png": "./static/media/dart.174578d11530ff86a3b5.png",
     "static/media/silkmaiden.jpg": "./static/media/silkmaiden.51986a894c703c7fb747.jpg",
     "static/media/Jane.jpg": "./static/media/Jane.12d8634640376e811814.jpg",
+    "static/media/json_editor.png": "./static/media/json_editor.4f80ded0429809101c10.png",
     "static/media/Alice.gif": "./static/media/Alice.37e54fa63020582d83ba.gif",
     "static/media/Willow_Formal.png": "./static/media/Willow_Formal.0d598e9c5aea37674598.png",
     "static/media/Willow_Shadow.png": "./static/media/Willow_Shadow.040fdac6101a22d19318.png",
@@ -55,10 +56,10 @@
     "static/media/bars-solid.svg": "./static/media/bars-solid.4ada9cff8def51a13630540467bf0937.svg",
     "index.html": "./index.html",
     "main.650af280.css.map": "./static/css/main.650af280.css.map",
-    "main.86a1c605.js.map": "./static/js/main.86a1c605.js.map"
+    "main.fbc39d1f.js.map": "./static/js/main.fbc39d1f.js.map"
   },
   "entrypoints": [
     "static/css/main.650af280.css",
-    "static/js/main.86a1c605.js"
+    "static/js/main.fbc39d1f.js"
   ]
 }
