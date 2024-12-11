@@ -14,7 +14,7 @@ Other three are my personal little ideas:
 
 ## What it was written in?
 
-It was written primarily using React.js framework with installed SASS module. This framework allows to use an upgraded JavaScript - JSX.
+It was written using primarily React.js framework with installed SASS module. This framework allows to use an upgraded JavaScript - JSX.
 
 ## How to see the results?
 
