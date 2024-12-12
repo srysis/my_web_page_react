@@ -21,6 +21,19 @@ It was written using primarily React.js framework with installed SASS module. Th
 You can either visit [this page](https://srysis.github.io/my_web_page_react/) or download the 'build' folder and open the 'index.html' file.
 All pages should work locally without any servers with no issues.
 
+## Source code
+
+This repo only contains source code of the personal web-page and some other two little projects that are the actual part of the whole website.
+Other projects are accessed by visiting their compiled version. You can see their source code on seperate repositories:
+
++ [Replicas of templates](https://github.com/srysis/template_websites)
++ [JSON editor](https://github.com/srysis/json_editor)
+
+There is also a source code for the old version of my personal web-page. 
+Functionally it's the same, as the one saved on this repo with the exception being that it was written in HTML, CSS, and pure JS.
+It can be found [here](https://github.com/srysis/my_web_page).
+Keep in mind that it's not being updated anymore.
+
 ## Things to keep in mind
 
 + Some designs may be a bit basic. I am currently considering doing an overhaul of some pages, e.g. "About me" page;
