@@ -29,6 +29,19 @@ function Home() {
 			<p>
 				That's pretty much all you need to know about my professional life. 
 			</p>
+			<hr />
+			<p>
+				<strong>
+					(ENG) If you are an employer and interested in hiring, you can take a look at my CV 
+						<a href="https://drive.google.com/file/d/1WLmnT231G0Yoj2Cy6v94UlKyBqVN0XBX/view?usp=drive_link" target="_blank"> here</a>.
+				</strong>
+			</p>
+			<p>
+				<strong>
+					(CZ) Pokud jste zaměstnavatel a máte zájem o zaměstnání, můžete se podívat na můj životopis 
+						<a href="https://drive.google.com/file/d/1p2f3MQkbfGnYbNovBmaBHojOpnhvCbF-/view?usp=drive_link" target="_blank"> zde</a>.
+				</strong>
+			</p>
 		</>
 	)
 }
