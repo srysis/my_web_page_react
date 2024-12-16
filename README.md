@@ -23,9 +23,11 @@ All pages should work locally without any servers with no issues.
 
 ## Source code
 
-This repo only contains source code of the personal web-page and some other two little projects that are the actual part of the whole website.
+This repo only contains source code of the personal web-page.
 Other projects are accessed by visiting their compiled version. You can see their source code on seperate repositories:
 
++ [Characters miniature wiki](https://github.com/srysis/characters_mini_wiki)
++ [Gallery](https://github.com/srysis/gallery)
 + [Replicas of templates](https://github.com/srysis/template_websites)
 + [JSON editor](https://github.com/srysis/json_editor)
 
