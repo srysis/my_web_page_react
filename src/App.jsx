@@ -5,16 +5,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from "./Layout"
 
 import Home from "./pages/home"
-import AboutMe from "./pages/about_me"
 import Portfolio from "./pages/portfolio"
-
-import Characters from "./pages/characters/characters"
-import Alice from "./pages/characters/alice"
-import Jane from "./pages/characters/jane"
-import Pandemonica from "./pages/characters/pandemonica"
-import Willow from "./pages/characters/willow"
-
-import Gallery from "./pages/gallery"
 
 import "./style/style.scss"
 import "./style/style-phone.scss"
@@ -25,14 +16,7 @@ function App() {
 			<Routes>
 				<Route element={<Layout />}>
 					<Route path="/" element={<Home />} />
-					<Route path="/about_me" element={<AboutMe />} />
 					<Route path="/portfolio" element={<Portfolio />} />
-					<Route path="/gallery" element={<Gallery />} />
-					<Route path="/characters" element={<Characters />} />
-					<Route path="/characters/alice" element={<Alice />} />
-					<Route path="/characters/jane" element={<Jane />} />
-					<Route path="/characters/pandemonica" element={<Pandemonica />} />
-					<Route path="/characters/willow" element={<Willow />} />
 				</Route>
 			</Routes>
 		</Router>
