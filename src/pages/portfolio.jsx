@@ -32,6 +32,12 @@ function Portfolio() {
 		case 5:
 			window.open("json_editor/json_editor.html", "_blank");
 			break;
+		case 6:
+			window.open("characters/characters.html", "_blank");
+			break;
+		case 7:
+			window.open("gallery/gallery.html", "_blank");
+			break;
 		}
 	}
 
@@ -42,14 +48,14 @@ function Portfolio() {
 				Here resides the collection of my little projects that I've managed to build in my learning process. 
 				Some are just implementations of existing designs, while some are the ideas that my made up on my own.
 			</h3>
-			<div className="link_to_project" onClick={() => {navigate("/characters")}}>
+			<div className="link_to_project" onClick={() => onClickHandler(6)}>
 				<img src={characters_image} title="Characters" />
 				<div className="text">
 					<h3>Characters</h3>
 					<p>A page where you can read some information about my favorite characters.</p>
 				</div>
 			</div>
-			<div className="link_to_project" onClick={() => {navigate("/gallery")}}>
+			<div className="link_to_project" onClick={() => onClickHandler(7)}>
 				<img src={gallery_image} title="Gallery" />
 				<div className="text">
 					<h3>Image gallery</h3>
