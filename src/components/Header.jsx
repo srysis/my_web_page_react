@@ -9,7 +9,6 @@ function Header() {
 				</h1>
 				<nav>
 					<Link to="/portfolio">Portfolio</Link>
-					<Link to="/about_me">About me</Link>
 				</nav>
 			</header>
 			<hr className="header_hr" />
