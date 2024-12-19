@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.b3026d8a.css",
-    "main.js": "./static/js/main.e5e1b59d.js",
+    "main.css": "./static/css/main.79eed5e5.css",
+    "main.js": "./static/js/main.3178f241.js",
     "static/media/background-2.jpg": "./static/media/background-2.80247c86718607b7995e.jpg",
     "static/media/car_game.png": "./static/media/car_game.c488f1621792cd23c3e9.png",
     "static/media/gallery.png": "./static/media/gallery.b46f91b73ae2f6717c39.png",
@@ -10,13 +10,13 @@
     "static/media/corona.png": "./static/media/corona.49f5bcfbdeb84ce18f48.png",
     "static/media/dart.png": "./static/media/dart.174578d11530ff86a3b5.png",
     "static/media/json_editor.png": "./static/media/json_editor.4f80ded0429809101c10.png",
-    "static/media/bars-solid.svg": "./static/media/bars-solid.4ada9cff8def51a13630540467bf0937.svg",
+    "static/media/github-mark-white.svg": "./static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "./index.html",
-    "main.b3026d8a.css.map": "./static/css/main.b3026d8a.css.map",
-    "main.e5e1b59d.js.map": "./static/js/main.e5e1b59d.js.map"
+    "main.79eed5e5.css.map": "./static/css/main.79eed5e5.css.map",
+    "main.3178f241.js.map": "./static/js/main.3178f241.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3026d8a.css",
-    "static/js/main.e5e1b59d.js"
+    "static/css/main.79eed5e5.css",
+    "static/js/main.3178f241.js"
   ]
 }
