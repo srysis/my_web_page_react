@@ -1,18 +1,15 @@
-import { Link } from "react-router-dom"
 
 function Header() {
 	return (
-		<>
-			<header>
-				<h1>
-					<Link to="/" id="index_link">My personal web-site</Link>
-				</h1>
-				<nav>
-					<Link to="/portfolio">Portfolio</Link>
-				</nav>
-			</header>
-			<hr className="header_hr" />
-		</>
+		<header>
+			<div className="left_block">
+				<div id="welcome">
+					<span>WELCOME</span>
+					<span>TO</span>
+					<span className="underlined">MY PAGE</span>
+				</div>
+			</div>
+		</header>
 	) 
 }
 

@@ -1,12 +1,32 @@
+import github_icon from "../files/github-mark-white.svg"
 
 function Footer() {
 	return (
-		<>
-			<hr className="footer_hr" />
-			<footer id="index">
-				<p><em>&copy; srysis, 2024</em></p>
-			</footer>
-		</>
+		<footer>
+			<div className="flex_container">
+				<div className="left">
+					<div>
+						<img src={github_icon} /><span><a href="https://github.com/srysis/my_web_page_react" target="_blank">Source code</a></span>
+					</div>
+				</div>
+				<div className="right">
+					<div>
+						<span className="git"><a href="https://github.com/srysis" target="_blank">GitHub</a></span>
+					</div>
+					<div>
+						<span><a href="https://www.linkedin.com/in/denys-yarymovych-226823327/" target="_blank">LinkedIn</a></span>
+					</div>
+					<div>
+						<span><em>jashandenis@gmail.com</em></span>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div id="copyright">
+				<p>&copy; srysis, 2024. All rights reserved.</p>
+				<p >All available materials are used for educational purposes only. If you have any problems, please contact me.</p>
+			</div>
+		</footer>
 	) 
 }
 
