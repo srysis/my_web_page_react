@@ -40,5 +40,4 @@ Keep in mind that it's not being updated anymore.
 
 + Some designs may be a bit basic. I am currently considering doing an overhaul of some pages, e.g. "About me" page;
 + Adaptive layout can behave a bit weird, since I don't have that many devices to test my pages on;
-+ JSON editor page doesn't have an adaptive layout, it is currently being worked on;
 + I am still learning, so expect some other unmentioned problems.
