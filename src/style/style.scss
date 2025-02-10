@@ -8,7 +8,7 @@ body {
 	background-size: cover;
 	background-color: #000;
 	color: #eee;
-	font: 14px/1.5 "Verdana", "Arial", sans-serif;
+	font: 12px/1.5 "Verdana", "Arial", sans-serif;
 	overflow-x: hidden;
 }
 
@@ -29,7 +29,7 @@ header {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
-			padding: 36vh 0 38vh 0;
+			padding: 38vh 0;
 			animation: left_to_right 3.5s ease-out;
 
 			span {
@@ -102,6 +102,28 @@ section {
 		text-align: center;
 		font-size: 1.8em;
 
+		div.hard_skills {
+			h3 {
+				margin: 1vh 0;
+				font-size: 1.6em;
+			}
+
+			b {
+				font-size: 1.25em;
+			}
+
+			ul {
+				margin-block-start: 0;
+				margin-block-end: 0;
+
+				li {
+					padding: 0.5em 0;
+					margin-left: 1em;
+				}
+			}
+
+			
+		}
 	}
 }
 
@@ -144,7 +166,7 @@ div#flex_container {
 	margin: auto;
 
 	section {
-		height: 290px;
+		height: 240px;
 	}
 
 	section#portfolio {
