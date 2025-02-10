@@ -20,7 +20,7 @@ function MoreInfo() {
 		})
 	} else if (window.innerWidth < 550) { // works if it is a mobile device
 		window.addEventListener("scroll", function() {
-			if (isVisibleInViewport(document.querySelector("section#more_info"), 1)) {
+			if (isVisibleInViewport(document.querySelector("section#more_info"), 0)) {
 				document.querySelector("section#more_info").classList.add("animate");
 				document.querySelector("section#more_info").classList.add("fade_in");
 			}
@@ -33,7 +33,7 @@ function MoreInfo() {
 			<hr />
 			<div className="text">
 				<p>
-					I have a bachelor's degree in Software Engineering since I wanted to be a programmer, but as time went on I realized that advanced programming is not my passion, 
+					I have a bachelor's degree in Software Engineering since I wanted to be a programmer, but as time went on I realized that advanced programming is more complicated than I thought it would be, 
 					so I decided to develop myself in Front-End.
 				</p>
 				<p>
@@ -51,6 +51,35 @@ function MoreInfo() {
 					Currently, I am learning Front-End development and consider myself at Junior level. I believe I have skills that are appropriate for this level
 					and I am ready to take a step further by applying to a job on the same position. 
 				</p>
+				<div className="hard_skills">
+					<h3>Below are the tools and programming languages that I work or have worked with before:</h3>
+					<ul>
+						<li>
+							<b>HTML</b> - all common tags that are widely used, understanding of DOM(Document Object Model) and how it's constructed;
+						</li>
+						<li>
+							<b>CSS</b> - positioning and animating, flex-box for more... flexible layout, media-queries for responsiveness via breakpoints;
+							I also use SCSS for better code management and readability;
+						</li>
+						<li>
+							<b>JavaScript</b> - element creation and manipulation via DOM, style manipulation, event listeners, JSON processing and file uploading, 'drag-n-drop' functionality, 
+							theoretical knowledge of asynchronious programming and 'promises' in JS;
+						</li>
+						<li>
+							<b>React.js</b> - my main tool; creation of functional or class components for modular approach, utilizing React states and hooks, using React Router for SPA;
+							<br/><em>This whole web-site and it's sub-pages was written with React.js in JSX language</em>
+						</li>
+						<li>
+							<b>GitHub and GitHub pages</b> - GitHub for version tracking, GitHub Pages for hosting this web-site;
+						</li>
+						<li>
+							<b>C#</b> - general, but practical knowledge, understanding of OOP(objects, classes, methods) and it's principles(encapsulation, inheritance, polymorphism, and abstraction);
+						</li>
+						<li>
+							<b>Adobe PhotoShop</b> - basic editing and post-processing of photos.
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 	)
