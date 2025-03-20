@@ -17,14 +17,13 @@ function Footer() {
 						<span><a href="https://www.linkedin.com/in/denys-yarymovych-226823327/" target="_blank">LinkedIn</a></span>
 					</div>
 					<div>
-						<span><em>jashandenis@gmail.com</em></span>
+						<span><em>denys.yarymovych@gmail.com</em></span>
 					</div>
 				</div>
 			</div>
 			<hr />
 			<div id="copyright">
-				<p>&copy; srysis, 2024. All rights reserved.</p>
-				<p >All available materials are used for educational purposes only. If you have any problems, please contact me.</p>
+				<p>All available materials are used for educational purposes only. If you have any problems, please contact me.</p>
 			</div>
 		</footer>
 	) 
