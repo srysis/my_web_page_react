@@ -15,7 +15,7 @@ Other four are my own ideas:
 
 ## What it was written in?
 
-It was written using React.js framework with 'SASS' for CSS preprocessing and 'React-Router' for client-side routing.
+It was written using React.js framework with 'SCSS' for CSS preprocessing and 'React-Router' for client-side routing.
 
 ## How to see the results?
 
