@@ -5,21 +5,21 @@ This web-page serves as "proving grounds" for my skills as well as a way for emp
 
 ## Portfolio
 
-Currently, it has seven projects, four of which are replicas of existing templates. 
-Other three are my personal little ideas:
+Currently, it has eight projects, four of which are replicas of existing templates. 
+Other four are my own ideas:
 
-+ A sudo "wiki", where you can read some information about my favorite characters;
-+ Image gallery, where you can look at some images of my favorite characters;
-+ A simple JSON editor, that I made to train my skills working with JSON files.
++ A mini-encyclopedia about my favorite characters
++ Image gallery
++ A simple JSON editor
++ A 'proof-of-concept' online-shop
 
 ## What it was written in?
 
-It was written using React.js framework with installed SASS and React-Router modules.
+It was written using React.js framework with 'SASS' for CSS preprocessing and 'React-Router' for client-side routing.
 
 ## How to see the results?
 
-You can either visit [this page](https://srysis.github.io/my_web_page_react/) or download the 'build' folder and open the 'index.html' file.
-All pages should work locally without any servers with no issues.
+Visit [this page](https://srysis.github.io/my_web_page_react/).
 
 ## Source code
 
@@ -31,12 +31,7 @@ Other projects are accessed by visiting their compiled version. You can see thei
 + [Replicas of templates](https://github.com/srysis/template_websites)
 + [JSON editor](https://github.com/srysis/json_editor)
 
-There is also a source code for the old version of my personal web-page. 
-Functionally it's the same, as the one saved on this repo with the exception being that it was written in HTML, CSS, and pure JS.
+There is also a source code for the old version of this web-page. 
+It's design is rather outdated and primitive.
 It can be found [here](https://github.com/srysis/my_web_page).
 Keep in mind that it's not being updated anymore.
-
-## Things to keep in mind
-
-+ Responsiveness can behave a bit weird, since I don't have that many devices to test my pages on;
-+ I am still learning, so expect other unmentioned problems.
