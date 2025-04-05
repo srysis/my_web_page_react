@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.082f864e.css",
-    "main.js": "./static/js/main.7860feec.js",
-    "static/media/background-2.jpg": "./static/media/background-2.80247c86718607b7995e.jpg",
-    "static/media/car_game.png": "./static/media/car_game.c488f1621792cd23c3e9.png",
-    "static/media/gallery.png": "./static/media/gallery.b46f91b73ae2f6717c39.png",
-    "static/media/marry_house.png": "./static/media/marry_house.db477ea0dd3653d13a99.png",
-    "static/media/characters.png": "./static/media/characters.acd926f6caabe5e6178b.png",
-    "static/media/corona.png": "./static/media/corona.49f5bcfbdeb84ce18f48.png",
-    "static/media/dart.png": "./static/media/dart.174578d11530ff86a3b5.png",
-    "static/media/json_editor.png": "./static/media/json_editor.4f80ded0429809101c10.png",
-    "static/media/github-mark-white.svg": "./static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
-    "index.html": "./index.html",
-    "main.082f864e.css.map": "./static/css/main.082f864e.css.map",
-    "main.7860feec.js.map": "./static/js/main.7860feec.js.map"
+    "main.css": "/static/css/main.7ea224f7.css",
+    "main.js": "/static/js/main.89eaeb39.js",
+    "static/media/background-2.jpg": "/static/media/background-2.80247c86718607b7995e.jpg",
+    "static/media/gallery.png": "/static/media/gallery.b16c787b2138ef27dc25.png",
+    "static/media/characters.png": "/static/media/characters.28f0518186ab9a111bd3.png",
+    "static/media/car_game.png": "/static/media/car_game.88f5ce10e2c37364c479.png",
+    "static/media/corona.png": "/static/media/corona.e56a28e29846321a58ee.png",
+    "static/media/marry_house.png": "/static/media/marry_house.2216626490f94f5a1ecd.png",
+    "static/media/game_shop.png": "/static/media/game_shop.543d98b713ded1456cba.png",
+    "static/media/dart.png": "/static/media/dart.52da9b11ecfe7a7fe803.png",
+    "static/media/json_editor.png": "/static/media/json_editor.f9a766e739e239047a4a.png",
+    "static/media/github-mark-white.svg": "/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
+    "index.html": "/index.html",
+    "main.7ea224f7.css.map": "/static/css/main.7ea224f7.css.map",
+    "main.89eaeb39.js.map": "/static/js/main.89eaeb39.js.map"
   },
   "entrypoints": [
-    "static/css/main.082f864e.css",
-    "static/js/main.7860feec.js"
+    "static/css/main.7ea224f7.css",
+    "static/js/main.89eaeb39.js"
   ]
 }
