@@ -15,7 +15,7 @@ function App() {
 	}
 
 	return (
-		<BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
+		<BrowserRouter basename={"/my_web_page_react"}>
 			<Routes>
 				<Route path="" element={<Home />} />
 				<Route path="/portfolio" element={<Portfolio />} />
