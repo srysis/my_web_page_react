@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 import Home from "./pages/home"
 import Portfolio from "./pages/portfolio"
@@ -15,13 +15,13 @@ function App() {
 	}
 
 	return (
-		<BrowserRouter basename={"/my_web_page_react"}>
+		<HashRouter basename="/">
 			<Routes>
-				<Route path="" element={<Home />} />
+				<Route path="/" element={<Home />} />
 				<Route path="/portfolio" element={<Portfolio />} />
 				<Route path="*" element={<NotFoundPage />} />
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 
