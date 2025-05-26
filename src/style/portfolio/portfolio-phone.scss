@@ -1,5 +1,5 @@
 @media screen and (max-width: 550px) {
-	div#landing_pages, div#full_projects, div#side_projects {
+	div#landing_pages, div#full_projects, div#side_projects, div#demos {
 		width: 97%;
 		margin: 15px auto;
 
@@ -9,6 +9,31 @@
 
 		button:after {
 			left: 90%;
+		}
+
+		div.list_content > div.project {
+			flex-direction: column;
+			padding: 10px 0;
+
+			div.description, div.video_container {
+				width: 98%;
+				margin: auto;
+			}
+
+			div.description {
+				border: none;
+				padding-top: 10px;
+				padding-bottom: 30px;
+				font-size: 1em;
+
+				h2 {
+					margin: 0;
+				}
+
+				p {
+					font-size: 1.1em;
+				}
+			}
 		}
 	}
 

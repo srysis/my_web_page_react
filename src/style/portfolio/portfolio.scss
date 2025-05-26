@@ -1,10 +1,10 @@
-h2#title {
+h1#title {
 	padding: 2vh 0;
 	font-size: 3em;
 	text-align: center;
 }
 
-div#landing_pages, div#full_projects, div#side_projects {
+div#landing_pages, div#full_projects, div#side_projects, div#demos {
 	margin: 15px 0;
 	border: 3px solid #444;
 	border-radius: 10px;
@@ -38,14 +38,51 @@ div#landing_pages, div#full_projects, div#side_projects {
 		overflow: hidden;
 		background-color: #000;
 		transition: max-height 0.5s ease-out;
+
+		div.project {
+			display: flex;
+			justify-content: space-between;
+			margin: 2vh 1vw;
+			border: 5px solid #222;
+			border-radius: 10px;
+			padding: 2vh 1vw;
+
+			div.description {
+				width: 55%;
+				border-right: 3px solid #444;
+				padding-right: 1vw;
+				font-size: 1.4em;
+
+				h2 {
+					margin-top: 10px;
+					font-size: 2em;
+					text-align: center;
+				}
+
+				p {
+					margin-top: 20px;
+					text-indent: 1em;
+				}
+			}
+
+			div.video_container {
+				width: 44%;
+				border: 2px solid #666;
+
+				video {
+					width: 99.9%;
+				}
+			}
+		}
 	}
 }
 
-div#landing_pages.active, div#full_projects.active, div#side_projects.active {
+div#landing_pages.active, div#full_projects.active, div#side_projects.active, div#demos.active {
 	button:after {
 		content: '▲';
 	}
 }
+
 
 div.link_to_project {
 	display: flex;
