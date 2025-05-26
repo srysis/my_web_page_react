@@ -1,4 +1,17 @@
 @media screen and (max-width: 550px) {
+	div#landing_pages, div#full_projects, div#side_projects {
+		width: 97%;
+		margin: 15px auto;
+
+		button {
+			padding: 2vh 4vw;
+		}
+
+		button:after {
+			left: 90%;
+		}
+	}
+
 	div.link_to_project {
 		flex-direction: column;
 		margin: 8% 4%;

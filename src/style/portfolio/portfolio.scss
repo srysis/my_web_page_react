@@ -4,6 +4,49 @@ h2#title {
 	text-align: center;
 }
 
+div#landing_pages, div#full_projects, div#side_projects {
+	margin: 15px 0;
+	border: 3px solid #444;
+	border-radius: 10px;
+
+	button {
+		width: 100%;
+		position: relative;
+		border: none;
+		border-radius: 10px;
+		padding: 2vh 1.5vw;
+		background-color: #000;
+		color: #fff;
+		font-size: 2em;
+		font-weight: bold;
+		text-align: left;
+		cursor: pointer;
+	}
+
+	button:hover {
+		background-color: #111;
+	}
+
+	button:after {
+		content: '▼';
+		position: absolute;
+		left: 96%;
+	}
+
+	div.list_content {
+		max-height: 0;
+		overflow: hidden;
+		background-color: #000;
+		transition: max-height 0.5s ease-out;
+	}
+}
+
+div#landing_pages.active, div#full_projects.active, div#side_projects.active {
+	button:after {
+		content: '▲';
+	}
+}
+
 div.link_to_project {
 	display: flex;
 	margin: 2vh 1vw;
@@ -40,11 +83,7 @@ div.link_to_project {
 		padding: 5px;
 	}
 }
-div.link_to_project::after {
-	content: "";
-	display: block;
-	clear: both;
-}
+
 div.link_to_project:hover {
 	background-color: #333;
 }
