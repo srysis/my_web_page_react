@@ -64,7 +64,7 @@ function Portfolio() {
 
 	return (
 		<>
-			<h2 id="title">Portfolio</h2>
+			<h1 id="title">Portfolio</h1>
 			<main>
 				<div id="landing_pages">
 					<button type="button" className="toggle_landing_pages" onClick={expandList}>Landing pages</button>
@@ -136,6 +136,28 @@ function Portfolio() {
 							</div>
 						</div>
 					</div>
+				</div>
+				<div id="demos">
+					<button type="button" className="toggle_demos" onClick={expandList}>Project demos</button>
+					<div className="list_content">
+						<div className="project">
+							<div className="description">
+								<h2>'Game Shop' demo</h2>
+								<p>
+									A build of 'Game Shop' project that was rewritten to utilize database that contains all the neccessary data about games.
+									Uses MySQL as a database, created by phpMyAdmin with MAMP software. As a server, it uses Node.js with Express to communicate with a database.
+									Requests are handled by Axios.
+								</p>
+							</div>
+							<div className="video_container">
+								<video controls controlsList="noRemotePlayback" disablePictureInPicture>
+									<source src="Game_Shop_demo.mp4" type="video/mp4" />
+								</video>
+							</div>
+						</div>
+						
+					</div>
+					
 				</div>
 			</main>
 		</>
