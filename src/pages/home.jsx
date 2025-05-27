@@ -5,6 +5,7 @@ import Footer from "../components/Footer.jsx"
 
 import AboutMe from "../components/AboutMe.jsx"
 import MoreInfo from "../components/MoreInfo.jsx"
+import Skills from "../components/Skills.jsx"
 
 import Portfolio from "../components/PortfolioSection.jsx"
 import Hiring from "../components/Hire.jsx"
@@ -18,6 +19,7 @@ function Home() {
 			<main>
 				<AboutMe />
 				<MoreInfo />
+				<Skills />
 				<div id="flex_container">
 					<Portfolio />
 					<Hiring />
