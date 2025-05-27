@@ -45,17 +45,7 @@
 		width: 93%;
 		font-size: 1.3em;
 
-		div.hard_skills {
-			h3 {
-				padding: 2vh 0;
-				font-size: 1.4em;
-				text-indent: 1em;
-			}
-
-			b {
-				font-size: 1.15em;
-			}
-		}
+		
 	}
 
 	section#about_me > div.text {
@@ -67,6 +57,21 @@
 
 		p {
 			padding: 5px 0;
+		}
+	}
+
+	section#skills > div.text {
+		font-size: 1.2em;
+
+		h3 {
+			font-size: 1.2em;
+			text-indent: 1em;
+		}
+
+		div.hard_skills {
+			b {
+				font-size: 1.15em;
+			}
 		}
 	}
 

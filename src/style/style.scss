@@ -108,29 +108,6 @@ section {
 		color: #ddd;
 		text-align: center;
 		font-size: 1.8em;
-
-		div.hard_skills {
-			h3 {
-				margin: 1vh 0;
-				font-size: 1.6em;
-			}
-
-			b {
-				font-size: 1.25em;
-			}
-
-			ul {
-				margin-block-start: 0;
-				margin-block-end: 0;
-
-				li {
-					padding: 0.5em 0;
-					margin-left: 1em;
-				}
-			}
-
-			
-		}
 	}
 }
 
@@ -163,6 +140,38 @@ section#more_info {
 		p {
 			padding: 15px 0;
 			text-indent: 1em;
+		}
+	}
+}
+
+section#skills {
+	left: -2000px;
+
+	div.text {
+		text-align: left;
+		font-size: 1.5em;
+
+		h3 {
+			margin: 1vh 0;
+			font-size: 1.6em;
+		}
+
+		div.hard_skills {
+			
+
+			b {
+				font-size: 1.25em;
+			}
+
+			ul {
+				margin-block-start: 0;
+				margin-block-end: 0;
+
+				li {
+					padding: 0.5em 0;
+					margin-left: 1em;
+				}
+			}
 		}
 	}
 }
