@@ -1,5 +1,4 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom"
 
 import useTitle from "../components/hooks/useTitle.jsx"
 
@@ -18,8 +17,6 @@ import "../style/portfolio/portfolio-phone.scss"
 
 function Portfolio() {
 	useTitle("Portfolio");
-
-	const navigate = useNavigate();
 
 	function onClickHandler(site) {
 		switch (site) {
@@ -47,6 +44,9 @@ function Portfolio() {
 		case 8:
 			window.open("https://srysis-game-shop.netlify.app", "_blank");
 			break;
+		default:
+			console.error("No such value.");
+			break;
 		}
 	}
 
@@ -70,28 +70,28 @@ function Portfolio() {
 					<button type="button" className="toggle_landing_pages" onClick={expandList}>Landing pages</button>
 					<div className="list_content">
 						<div className="link_to_project" onClick={() => onClickHandler(1)} >
-							<img src={dart_image} title="DART SERVICE MANAGER" />
+							<img src={dart_image} title="DART SERVICE MANAGER" alt="DART SERVICE MANAGER" />
 							<div className="text">
 								<h3>DART SERVICE MANAGER</h3>
 								<p>A landing page template that I have implemented and adapted to smaller screens.</p>
 							</div>
 						</div>
 						<div className="link_to_project" onClick={() => onClickHandler(2)} >
-							<img src={corona_image} title="CORONAVIRUS AWARENESS SPREAD" />
+							<img src={corona_image} title="CORONAVIRUS AWARENESS SPREAD" alt="CORONAVIRUS AWARENESS SPREAD" />
 							<div className="text">
 								<h3>CORONAVIRUS AWARENESS SPREAD</h3>
 								<p>A landing page template that I have implemented and adapted to smaller screens.</p>
 							</div>
 						</div>
 						<div className="link_to_project" onClick={() => onClickHandler(3)}>
-							<img src={marry_house_image} title="MARRY HOUSE" />
+							<img src={marry_house_image} title="MARRY HOUSE" alt="MARRY HOUSE" />
 							<div className="text">
 								<h3>MARRY HOUSE</h3>
 								<p>A landing page template that I have implemented and adapted to smaller screens.</p>
 							</div>
 						</div>
 						<div className="link_to_project" onClick={() => onClickHandler(4)}>
-							<img src={car_game_image} title="SPEED CAR GAME" />
+							<img src={car_game_image} title="SPEED CAR GAME" alt="SPEED CAR GAME" />
 							<div className="text">
 								<h3>SPEED CAR GAME</h3>
 								<p>A landing page template that I have implemented and adapted to smaller screens.</p>
@@ -103,10 +103,10 @@ function Portfolio() {
 					<button type="button" className="toggle_full_projects" onClick={expandList}>Full projects</button>
 					<div className="list_content">
 						<div className="link_to_project" onClick={() => onClickHandler(8)}>
-							<img src={game_shop_image} title="Game Shop" style={{ "objectPosition": "10% 10%" }} />
+							<img src={game_shop_image} title="Game Shop" alt="Game Shop" style={{ "objectPosition": "10% 10%" }} />
 							<div className="text">
 								<h3>Game Shop</h3>
-								<p>A 'proof-of-concept' online shop where games could be bought.</p>
+								<p>A 'proof-of-concept' online shop.</p>
 							</div>
 						</div>
 					</div>
@@ -115,21 +115,21 @@ function Portfolio() {
 					<button type="button" className="toggle_side_projects" onClick={expandList}>Side projects</button>
 					<div className="list_content">
 						<div className="link_to_project" onClick={() => onClickHandler(6)}>
-							<img src={characters_image} title="Characters" />
+							<img src={characters_image} title="Characters" alt="Characters" />
 							<div className="text">
 								<h3>Characters</h3>
 								<p>A page where you can read some information about my favorite characters.</p>
 							</div>
 						</div>
 						<div className="link_to_project" onClick={() => onClickHandler(7)}>
-							<img src={gallery_image} title="Gallery" />
+							<img src={gallery_image} title="Gallery" alt="Gallery" />
 							<div className="text">
 								<h3>Image gallery</h3>
 								<p>A page where you can see images of my favorite characters.</p>
 							</div>
 						</div>
 						<div className="link_to_project" onClick={() => onClickHandler(5)}>
-							<img src={json_editor_image} title="JSON editor" />
+							<img src={json_editor_image} title="JSON editor" alt="JSON editor" />
 							<div className="text">
 								<h3>JSON Editor</h3>
 								<p>A simple and very basic JSON editor app.</p>
