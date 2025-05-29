@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link } from "react-router-dom"
 
 function PortfolioSection( {all_animations_played} ) {
@@ -27,25 +28,24 @@ function PortfolioSection( {all_animations_played} ) {
 		}
 	}
 
-	if (!all_animations_played) {
-		if (window.innerWidth > 550) { // check if it's not a mobile device
-			window.addEventListener("scroll", onDekstopScroll);
-		} else if (window.innerWidth < 550) { // works if it is a mobile device
-			window.addEventListener("scroll", onMobileScroll);
+	useEffect(() => {
+		if (!all_animations_played) {
+			if (window.innerWidth > 550) { // check if it's not a mobile device
+				window.addEventListener("scroll", onDekstopScroll);
+			} else if (window.innerWidth < 550) { // works if it is a mobile device
+				window.addEventListener("scroll", onMobileScroll);
+			}
+		} else {
+			window.removeEventListener("scroll", onDekstopScroll);
+			window.removeEventListener("scroll", onMobileScroll);
 		}
-	} else {
-		window.removeEventListener("scroll", onDekstopScroll);
-		window.removeEventListener("scroll", onMobileScroll);
-	}
+
+		return () => { window.removeEventListener("scroll", onDekstopScroll); window.removeEventListener("scroll", onMobileScroll); }
+	}, [all_animations_played]);
 
 
 	function onClickHandler() {
 		window.sessionStorage.setItem('scroll_pos', JSON.stringify(window.scrollY));
-
-		window.scrollTo(0, 0);
-
-		window.removeEventListener("scroll", onDekstopScroll);
-		window.removeEventListener("scroll", onMobileScroll);
 	}
 
 	return (

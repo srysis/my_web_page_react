@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 
 function MoreInfo( {all_animations_played} ) {
 	// function that checks if given element is in the user's browser's viewport by X percent, where X is from 0 to 100
@@ -13,29 +14,34 @@ function MoreInfo( {all_animations_played} ) {
 	
 
 	function onDekstopScroll() {
-		if (isVisibleInViewport(document.querySelector("section#about_me"), 40)) {
+		if (isVisibleInViewport(document.querySelector("section#more_info"), 40)) {
 			document.querySelector("section#more_info").classList.add("animate");
 			document.querySelector("section#more_info").classList.add("right_to_left");
 		}
 	}
 
 	function onMobileScroll() {
-		if (isVisibleInViewport(document.querySelector("section#about_me"), 1)) {
+		if (isVisibleInViewport(document.querySelector("section#more_info"), 1)) {
 			document.querySelector("section#more_info").classList.add("animate");
 			document.querySelector("section#more_info").classList.add("fade_in");
 		}
 	}
 
-	if (!all_animations_played) {
-		if (window.innerWidth > 550) { // check if it's not a mobile device
-			window.addEventListener("scroll", onDekstopScroll);
-		} else if (window.innerWidth < 550) { // works if it is a mobile device
-			window.addEventListener("scroll", onMobileScroll);
+	useEffect(() => {
+		if (!all_animations_played) {
+			if (window.innerWidth > 550) { // check if it's not a mobile device
+				window.addEventListener("scroll", onDekstopScroll);
+			} else if (window.innerWidth < 550) { // works if it is a mobile device
+				window.addEventListener("scroll", onMobileScroll);
+			}
+		} else {
+			window.removeEventListener("scroll", onDekstopScroll);
+			window.removeEventListener("scroll", onMobileScroll);
 		}
-	} else {
-		window.removeEventListener("scroll", onDekstopScroll);
-		window.removeEventListener("scroll", onMobileScroll);
-	}
+
+		return () => { window.removeEventListener("scroll", onDekstopScroll); window.removeEventListener("scroll", onMobileScroll); }
+	}, [all_animations_played]);
+
 
 	return (
 		<section id="more_info" className={all_animations_played ? "animated" : ""}>
@@ -43,8 +49,8 @@ function MoreInfo( {all_animations_played} ) {
 			<hr />
 			<div className="text">
 				<p>
-					I have a bachelor's degree in Software Engineering since I wanted to be a programmer, but as time went on I realized that advanced programming is more complicated than I thought it would be, 
-					so I decided to develop myself in Front-End.
+					I have a bachelor's degree in Software Engineering since I wanted to be a programmer, but as time went on I realized that advanced programming 
+					is more complicated than I thought it would be, so I decided to develop myself in Front-End.
 				</p>
 				<p>
 					I have tried myself in modelling and animating. I have also used to work with a program called <abbr title="Source Filmmaker">SFM</abbr>. I 

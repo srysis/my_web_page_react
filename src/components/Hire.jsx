@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 
 function Hire_Page({ all_animations_played, setAnimationsPlayed }) {
 	// function that checks if given element is in the user's browser's viewport by X percent, where X is from 0 to 100
@@ -35,19 +36,20 @@ function Hire_Page({ all_animations_played, setAnimationsPlayed }) {
 	}
 
 
-	
-
-
-	if (!all_animations_played) {
-		if (window.innerWidth > 550) { // check if it's not a mobile device
-			window.addEventListener("scroll", onDekstopScroll);
-		} else if (window.innerWidth < 550) { // works if it is a mobile device
-			window.addEventListener("scroll", onMobileScroll);
+	useEffect(() => {
+		if (!all_animations_played) {
+			if (window.innerWidth > 550) { // check if it's not a mobile device
+				window.addEventListener("scroll", onDekstopScroll);
+			} else if (window.innerWidth < 550) { // works if it is a mobile device
+				window.addEventListener("scroll", onMobileScroll);
+			}
+		} else {
+			window.removeEventListener("scroll", onDekstopScroll);
+			window.removeEventListener("scroll", onMobileScroll);
 		}
-	} else {
-		window.removeEventListener("scroll", onDekstopScroll);
-		window.removeEventListener("scroll", onMobileScroll);
-	}
+
+		return () => { window.removeEventListener("scroll", onDekstopScroll); window.removeEventListener("scroll", onMobileScroll); }
+	}, [all_animations_played]);
 
 
 	return (
