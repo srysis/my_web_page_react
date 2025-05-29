@@ -62,11 +62,13 @@ function Portfolio() {
 		}
 	}
 
-	window.addEventListener("popstate", () => {
+	function onPopStateHandler() {
 		window.scrollTo(0, JSON.parse(window.sessionStorage.getItem('scroll_pos')));
 
-		window.sessionStorage.setItem('scroll_pos', JSON.stringify(0));
-	})
+		window.removeEventListener('popstate', onPopStateHandler);
+	}
+
+	window.addEventListener("popstate", onPopStateHandler);
 
 	return (
 		<>
