@@ -39,6 +39,11 @@ div#landing_pages, div#full_projects, div#side_projects, div#demos {
 		background-color: #000;
 		transition: max-height 0.5s ease-out;
 
+		p.list_description {
+			padding: 2vh 1.5vw;
+			font-size: 1.8em;
+		}
+
 		div.project {
 			display: flex;
 			justify-content: space-between;
@@ -86,7 +91,7 @@ div#landing_pages.active, div#full_projects.active, div#side_projects.active, di
 
 div.link_to_project {
 	display: flex;
-	margin: 2vh 1vw;
+	margin: 2vh 1.5vw;
 	border: 5px solid #222;
 	border-radius: 10px;
 	padding: 2vh 1vw;
