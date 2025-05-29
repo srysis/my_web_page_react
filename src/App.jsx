@@ -10,9 +10,7 @@ import "./style/style.scss"
 import "./style/style-phone.scss"
 
 function App() {
-	window.onbeforeunload = function() {
-		window.scrollTo(0, 0);
-	}
+	window.history.scrollRestoration = 'manual';
 
 	return (
 		<HashRouter basename="/">
