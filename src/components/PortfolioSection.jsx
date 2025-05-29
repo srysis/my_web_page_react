@@ -36,19 +36,25 @@ function PortfolioSection( {all_animations_played} ) {
 	} else {
 		window.removeEventListener("scroll", onDekstopScroll);
 		window.removeEventListener("scroll", onMobileScroll);
+	}
 
-		window.addEventListener("load", () => {
-			document.querySelector("section#portfolio").classList.add('animated');
-		})
+
+	function onClickHandler() {
+		window.sessionStorage.setItem('scroll_pos', JSON.stringify(window.scrollY));
+
+		window.scrollTo(0, 0);
+
+		window.removeEventListener("scroll", onDekstopScroll);
+		window.removeEventListener("scroll", onMobileScroll);
 	}
 
 	return (
-		<section id="portfolio">
+		<section id="portfolio" className={all_animations_played ? "animated" : ""}>
 			<h2>My portfolio</h2>
 			<hr />
 			<div className="text">
 				<p>I have been working on several small projects, but I have also worked on replication of pre-existing templates, that are freely available.</p>
-				<p style={{ "marginTop" : "10px" }}><strong><Link to="/portfolio" onClick={() => window.scrollTo(0, 0)}>You can access it here.</Link></strong></p>
+				<p style={{ "marginTop" : "10px" }}><strong><Link to="/portfolio"  onClick={onClickHandler}>You can access it here.</Link></strong></p>
 			</div>
 		</section>
 	)
