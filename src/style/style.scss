@@ -121,10 +121,6 @@ section {
 	}
 }
 
-section.animated {
-	position: static;
-}
-
 section#about_me {
 	left: -2000px;
 
@@ -142,6 +138,12 @@ section.animate.left_to_right {
 section.animate.right_to_left {
 	animation: right_to_left 1.5s ease-out;
 	animation-fill-mode: forwards;
+}
+
+section.animated, section.animate.animated {
+	position: static;
+	animation: none;
+	opacity: 1;
 }
 
 section#more_info {
