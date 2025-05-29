@@ -69,6 +69,7 @@ function Portfolio() {
 				<div id="landing_pages">
 					<button type="button" className="toggle_landing_pages" onClick={expandList}>Landing pages</button>
 					<div className="list_content">
+						<p className="list_description">This section contains landing pages that I've recreated. Templates for them were found on different and appropriate web-sites.</p>
 						<div className="link_to_project" onClick={() => onClickHandler(1)} >
 							<img src={dart_image} title="DART SERVICE MANAGER" alt="DART SERVICE MANAGER" />
 							<div className="text">
@@ -102,6 +103,10 @@ function Portfolio() {
 				<div id="full_projects">
 					<button type="button" className="toggle_full_projects" onClick={expandList}>Full projects</button>
 					<div className="list_content">
+						<p className="list_description">
+							This section contains projects, that took relatively longer to make. 
+							These projects have considerably more features, compared to other prjects.
+						</p>
 						<div className="link_to_project" onClick={() => onClickHandler(8)}>
 							<img src={game_shop_image} title="Game Shop" alt="Game Shop" style={{ "objectPosition": "10% 10%" }} />
 							<div className="text">
@@ -114,6 +119,7 @@ function Portfolio() {
 				<div id="side_projects">
 					<button type="button" className="toggle_side_projects" onClick={expandList}>Side projects</button>
 					<div className="list_content">
+						<p className="list_description">This section contains smaller projects. They don't have a lot of features and usually revolve around one or two functions.</p>
 						<div className="link_to_project" onClick={() => onClickHandler(6)}>
 							<img src={characters_image} title="Characters" alt="Characters" />
 							<div className="text">
@@ -140,6 +146,10 @@ function Portfolio() {
 				<div id="demos">
 					<button type="button" className="toggle_demos" onClick={expandList}>Project demos</button>
 					<div className="list_content">
+						<p className="list_description">
+							This section contains videos that demonstrate projects, usually full-stack ones. 
+							They were made using all the essential technologies that are required for a Full-Stack application (database, server hosting, handling client-server requests, etc.).
+						</p>
 						<div className="project">
 							<div className="description">
 								<h2>'Game Shop' demo</h2>
