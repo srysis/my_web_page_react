@@ -51,6 +51,16 @@ header {
 			}
 		}
 	}
+
+	div.left_block.animated {
+		position: static;
+		animation: none;
+
+		div#welcome {
+			position: static;
+			animation: none;
+		}
+	}
 }
 
 @keyframes left_to_right {
@@ -109,6 +119,10 @@ section {
 		text-align: center;
 		font-size: 1.8em;
 	}
+}
+
+section.animated {
+	position: static;
 }
 
 section#about_me {
