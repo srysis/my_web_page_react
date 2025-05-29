@@ -35,14 +35,10 @@ function MoreInfo( {all_animations_played} ) {
 	} else {
 		window.removeEventListener("scroll", onDekstopScroll);
 		window.removeEventListener("scroll", onMobileScroll);
-
-		window.addEventListener("load", () => {
-			document.querySelector("section#more_info").classList.add('animated');
-		})
 	}
 
 	return (
-		<section id="more_info">
+		<section id="more_info" className={all_animations_played ? "animated" : ""}>
 			<h2>More information about me</h2>
 			<hr />
 			<div className="text">

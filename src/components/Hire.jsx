@@ -19,7 +19,7 @@ function Hire_Page({ all_animations_played, setAnimationsPlayed }) {
 
 			setTimeout(() => {
 				setAnimationsPlayed(true);
-			}, 1000);
+			}, 2000);
 		}
 	}
 
@@ -30,7 +30,7 @@ function Hire_Page({ all_animations_played, setAnimationsPlayed }) {
 
 			setTimeout(() => {
 				setAnimationsPlayed(true);
-			}, 300);
+			}, 500);
 		}
 	}
 
@@ -47,15 +47,11 @@ function Hire_Page({ all_animations_played, setAnimationsPlayed }) {
 	} else {
 		window.removeEventListener("scroll", onDekstopScroll);
 		window.removeEventListener("scroll", onMobileScroll);
-
-		window.addEventListener("load", () => {
-			document.querySelector("section#hire").classList.add('animated');
-		})
 	}
 
 
 	return (
-		<section id="hire">
+		<section id="hire" className={all_animations_played ? "animated" : ""}>
 			<h2>Are you hiring?</h2>
 			<hr />
 			<div className="text">

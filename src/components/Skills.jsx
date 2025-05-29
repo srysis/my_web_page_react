@@ -34,14 +34,10 @@ function Skills( {all_animations_played} ) {
 	} else {
 		window.removeEventListener("scroll", onDekstopScroll);
 		window.removeEventListener("scroll", onMobileScroll);
-
-		window.addEventListener("load", () => {
-			document.querySelector("section#skills").classList.add('animated');
-		})
 	}
 
 	return (
-		<section id="skills">
+		<section id="skills" className={all_animations_played ? "animated" : ""}>
 			<h2>My skills</h2>
 			<hr />
 			<div className="text">

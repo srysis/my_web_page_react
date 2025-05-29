@@ -34,15 +34,11 @@ function AboutMe( {all_animations_played} ) {
 	} else {
 		window.removeEventListener("scroll", onDekstopScroll);
 		window.removeEventListener("scroll", onMobileScroll);
-
-		window.addEventListener("load", () => {
-			document.querySelector("section#about_me").classList.add('animated');
-		})
 	}
 	
 
 	return (
-		<section id="about_me">
+		<section id="about_me" className={all_animations_played ? "animated" : ""}>
 			<h2>Who are you?</h2>
 			<hr />
 			<div className="text">
