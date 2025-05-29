@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-function PortfolioSection() {
+function PortfolioSection( {all_animations_played} ) {
 	// function that checks if given element is in the user's browser's viewport by X percent, where X is from 0 to 100
 	function isVisibleInViewport(element, percentage) {
 		let rect = element.getBoundingClientRect();
@@ -12,19 +12,33 @@ function PortfolioSection() {
 		)
 	};
 
-	if (window.innerWidth > 550) { // check if it's not a mobile device
-		window.addEventListener("scroll", function() {
-			if (isVisibleInViewport(document.querySelector("section#portfolio"), 3)) {
-				document.querySelector("section#portfolio").classList.add("animate");
-				document.querySelector("section#portfolio").classList.add("left_to_right");
-			}
-		})
-	} else if (window.innerWidth < 550) { // works if it is a mobile device
-		window.addEventListener("scroll", function() {
-			if (isVisibleInViewport(document.querySelector("section#portfolio"), 1)) {
-				document.querySelector("section#portfolio").classList.add("animate");
-				document.querySelector("section#portfolio").classList.add("fade_in");
-			}
+
+	function onDekstopScroll() {
+		if (isVisibleInViewport(document.querySelector("section#portfolio"), 3)) {
+			document.querySelector("section#portfolio").classList.add("animate");
+			document.querySelector("section#portfolio").classList.add("left_to_right");
+		}
+	}
+
+	function onMobileScroll() {
+		if (isVisibleInViewport(document.querySelector("section#portfolio"), 1)) {
+			document.querySelector("section#portfolio").classList.add("animate");
+			document.querySelector("section#portfolio").classList.add("fade_in");
+		}
+	}
+
+	if (!all_animations_played) {
+		if (window.innerWidth > 550) { // check if it's not a mobile device
+			window.addEventListener("scroll", onDekstopScroll);
+		} else if (window.innerWidth < 550) { // works if it is a mobile device
+			window.addEventListener("scroll", onMobileScroll);
+		}
+	} else {
+		window.removeEventListener("scroll", onDekstopScroll);
+		window.removeEventListener("scroll", onMobileScroll);
+
+		window.addEventListener("load", () => {
+			document.querySelector("section#portfolio").classList.add('animated');
 		})
 	}
 
