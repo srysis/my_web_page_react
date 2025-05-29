@@ -36,6 +36,10 @@
 		}
 	}
 
+	section.animated, section.animate.animated {
+		transform: scale(1);
+	}
+
 	section.animate.fade_in {
 		animation: fade_in 0.5s ease-in;
 		animation-fill-mode: forwards;
