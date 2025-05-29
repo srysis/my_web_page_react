@@ -62,6 +62,12 @@ function Portfolio() {
 		}
 	}
 
+	window.addEventListener("popstate", () => {
+		window.scrollTo(0, JSON.parse(window.sessionStorage.getItem('scroll_pos')));
+
+		window.sessionStorage.setItem('scroll_pos', JSON.stringify(0));
+	})
+
 	return (
 		<>
 			<h1 id="title">Portfolio</h1>
