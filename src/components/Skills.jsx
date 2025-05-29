@@ -1,5 +1,5 @@
 
-function Skills() {
+function Skills( {all_animations_played} ) {
 	// function that checks if given element is in the user's browser's viewport by X percent, where X is from 0 to 100
 	function isVisibleInViewport(element, percentage) {
 		let rect = element.getBoundingClientRect();
@@ -11,19 +11,32 @@ function Skills() {
 		)
 	};
 
-	if (window.innerWidth > 550) { // check if it's not a mobile device
-		window.addEventListener("scroll", function() {
-			if (isVisibleInViewport(document.querySelector("section#skills"), 3)) {
-				document.querySelector("section#skills").classList.add("animate");
-				document.querySelector("section#skills").classList.add("left_to_right");
-			}
-		})
-	} else if (window.innerWidth < 550) { // works if it is a mobile device
-		window.addEventListener("scroll", function() {
-			if (isVisibleInViewport(document.querySelector("section#skills"), 100)) {
-				document.querySelector("section#skills").classList.add("animate");
-				document.querySelector("section#skills").classList.add("fade_in");
-			}
+	function onDekstopScroll() {
+		if (isVisibleInViewport(document.querySelector("section#skills"), 3)) {
+			document.querySelector("section#skills").classList.add("animate");
+			document.querySelector("section#skills").classList.add("left_to_right");
+		}
+	}
+
+	function onMobileScroll() {
+		if (isVisibleInViewport(document.querySelector("section#skills"), 100)) {
+			document.querySelector("section#skills").classList.add("animate");
+			document.querySelector("section#skills").classList.add("fade_in");
+		}
+	}
+
+	if (!all_animations_played) {
+		if (window.innerWidth > 550) { // check if it's not a mobile device
+			window.addEventListener("scroll", onDekstopScroll);
+		} else if (window.innerWidth < 550) { // works if it is a mobile device
+			window.addEventListener("scroll", onMobileScroll);
+		}
+	} else {
+		window.removeEventListener("scroll", onDekstopScroll);
+		window.removeEventListener("scroll", onMobileScroll);
+
+		window.addEventListener("load", () => {
+			document.querySelector("section#skills").classList.add('animated');
 		})
 	}
 

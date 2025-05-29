@@ -1,8 +1,9 @@
 
-function Header() {
+function Header( {all_animations_played} ) {
+
 	return (
 		<header>
-			<div className="left_block">
+			<div className={all_animations_played ? "left_block animated" : "left_block"}>
 				<div id="welcome">
 					<span>WELCOME</span>
 					<span>TO</span>

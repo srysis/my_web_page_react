@@ -1,5 +1,5 @@
 
-function MoreInfo() {
+function MoreInfo( {all_animations_played} ) {
 	// function that checks if given element is in the user's browser's viewport by X percent, where X is from 0 to 100
 	function isVisibleInViewport(element, percentage) {
 		let rect = element.getBoundingClientRect();
@@ -11,19 +11,33 @@ function MoreInfo() {
 		)
 	};
 	
-	if (window.innerWidth > 550) { // check if it's not a mobile device
-		window.addEventListener("scroll", function() {
-			if (isVisibleInViewport(document.querySelector("section#more_info"), 40)) {
-				document.querySelector("section#more_info").classList.add("animate");
-				document.querySelector("section#more_info").classList.add("right_to_left");
-			}
-		})
-	} else if (window.innerWidth < 550) { // works if it is a mobile device
-		window.addEventListener("scroll", function() {
-			if (isVisibleInViewport(document.querySelector("section#more_info"), 0)) {
-				document.querySelector("section#more_info").classList.add("animate");
-				document.querySelector("section#more_info").classList.add("fade_in");
-			}
+
+	function onDekstopScroll() {
+		if (isVisibleInViewport(document.querySelector("section#about_me"), 40)) {
+			document.querySelector("section#more_info").classList.add("animate");
+			document.querySelector("section#more_info").classList.add("right_to_left");
+		}
+	}
+
+	function onMobileScroll() {
+		if (isVisibleInViewport(document.querySelector("section#about_me"), 1)) {
+			document.querySelector("section#more_info").classList.add("animate");
+			document.querySelector("section#more_info").classList.add("fade_in");
+		}
+	}
+
+	if (!all_animations_played) {
+		if (window.innerWidth > 550) { // check if it's not a mobile device
+			window.addEventListener("scroll", onDekstopScroll);
+		} else if (window.innerWidth < 550) { // works if it is a mobile device
+			window.addEventListener("scroll", onMobileScroll);
+		}
+	} else {
+		window.removeEventListener("scroll", onDekstopScroll);
+		window.removeEventListener("scroll", onMobileScroll);
+
+		window.addEventListener("load", () => {
+			document.querySelector("section#more_info").classList.add('animated');
 		})
 	}
 
