@@ -64,8 +64,8 @@ function MoreInfo( {all_animations_played} ) {
 					I wanted to develop myself in solo game development, but there are more pressing matters to solve, so that idea was scrapped.
 				</p>
 				<p>
-					Currently, I am learning Front-End development and consider myself at Junior level. I believe I have skills that are appropriate for this level
-					and I am ready to take a step further by applying to a job on the same position. 
+					Currently, I am learning Web-development. I have gained a certain amount of experience and knowledge while developing few projects,
+					and I am ready to take a step further by applying to a job on the relevant position. 
 				</p>
 			</div>
 		</section>

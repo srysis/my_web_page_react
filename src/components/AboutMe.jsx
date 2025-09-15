@@ -47,8 +47,8 @@ function AboutMe( {all_animations_played} ) {
 			<h2>Who are you?</h2>
 			<hr />
 			<div className="text">
-				<p>My name is <b>Denis</b>, but I go by the nickname "<em>srysis</em>". I am 22 years old.</p>
-				<p>I am a Junior level Front-End developer and I have been studying this subject for almost a year.</p>
+				<p>My name is <b>Denis</b>, but I go by the nickname "<em>srysis</em>". I am 23 years old.</p>
+				<p>I am a Web-developer with almost two years of experience.</p>
 				<p>You are currently on my personal web-page, where all my projects and some bits of information about me can be seen and read.</p>
 				<p>Welcome and <b>enjoy your stay!</b></p>
 			</div>

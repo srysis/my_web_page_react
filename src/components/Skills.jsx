@@ -56,15 +56,15 @@ function Skills( {all_animations_played} ) {
 							<b>CSS</b> - most of common selectors, pseudoclasses, positioning, animating and 'transitions', 'flexbox' and media-queries for adaptability;
 						</li>
 						<li>
-							<b>JavaScript</b> - element creation and manipulation via DOM, style manipulation, event listeners, JSON processing and file uploading, 'drag-n-drop' functionality, 
-							theoretical knowledge of asynchronious programming and 'promises' in JS;
+							<b>JavaScript</b> - element creation and manipulation via DOM, style manipulation, event listeners, JSON processing and file uploading, 
+							experience in utilizing asynchronious programming and 'promises';
 						</li>
 						<li>
-							<b>React.js</b> - my main tool; creation of functional or class components for modular approach, utilizing React states and hooks, 
+							<b>React.js</b> - my main tool; creation of components for modular approach, utilizing React states and hooks, 
 							packages 'React-Router' for 'client routing' and 'Axios' for client-server requests;
 						</li>
 						<li>
-							<b>Node.js</b> - hosting a local server via 'Express', handling client-server requests;
+							<b>Node.js</b> - creating a working server with an API with 'Express', managing web-tokens with 'JWT' library, handling client-server requests;
 						</li>
 						<li>
 							<b>MySQL</b> - creation of databases with multiple tables, usage of most common data types(INT, VARCHAR, BOOL, FLOAT, DOUBLE), usage of main SQL commands (SELECT, FROM, WHERE, UPDATE, ALTER), 
