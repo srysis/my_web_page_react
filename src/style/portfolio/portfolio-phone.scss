@@ -1,5 +1,5 @@
 @media screen and (max-width: 550px) {
-	div#landing_pages, div#full_projects, div#side_projects, div#demos {
+	div#landing_pages, div#full_projects, div#side_projects {
 		width: 97%;
 		margin: 15px auto;
 
@@ -15,7 +15,7 @@
 			flex-direction: column;
 			padding: 10px 0;
 
-			div.description, div.video_container {
+			div.description {
 				width: 98%;
 				margin: auto;
 			}
