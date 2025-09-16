@@ -12,8 +12,8 @@ import json_editor_image from "../files/portfolio/json_editor.png"
 import game_shop_image from "../files/portfolio/game_shop.png"
 import forum_image from "../files/portfolio/forum.png"
 
-import "../style/portfolio/portfolio.scss"
-import "../style/portfolio/portfolio-phone.scss"
+import "../style/portfolio/portfolio.css"
+import "../style/portfolio/portfolio-phone.css"
 
 
 function Portfolio() {

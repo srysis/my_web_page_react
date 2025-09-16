@@ -6,8 +6,8 @@ import Home from "./pages/home"
 import Portfolio from "./pages/portfolio"
 import NotFoundPage from "./pages/not_found_page.jsx"
 
-import "./style/style.scss"
-import "./style/style-phone.scss"
+import "./style/style.css"
+import "./style/style-phone.css"
 
 function App() {
 	window.history.scrollRestoration = 'manual';

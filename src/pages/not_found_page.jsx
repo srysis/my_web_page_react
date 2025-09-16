@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import "../style/error404.scss"
+import "../style/error404.css"
 
 function NotFoundPage() {
 	return(
