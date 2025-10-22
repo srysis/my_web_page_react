@@ -5,17 +5,19 @@ This web-page serves as "proving grounds" for my skills as well as a way for emp
 
 ## Portfolio
 
-Currently, it has eight projects, four of which are replicas of existing templates. 
-Other four are my own ideas:
+Currently, it features five self-made projects and four 'training' project which are mostly replicas of existing web-page templates.
+Self-made projects include:
 
 + A mini-encyclopedia about my favorite characters
 + Image gallery
 + A simple JSON editor
 + A 'proof-of-concept' online-shop
++ A full-stack forum
 
 ## What it was written in?
 
-It was written using React.js framework with 'SCSS' for CSS preprocessing and 'React-Router' for client-side routing.
+It was written using React.js framework with React-Router for client-side routing.
+For styles it uses vanilla CSS3.
 
 ## How to see the results?
 
