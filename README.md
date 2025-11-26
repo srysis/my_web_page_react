@@ -5,7 +5,7 @@ This web-page serves as "proving grounds" for my skills as well as a way for emp
 
 ## Portfolio
 
-Currently, it features five self-made projects and four 'training' project which are mostly replicas of existing web-page templates.
+Currently, it features six self-made projects and four 'training' project which are mostly replicas of existing web-page templates.
 Self-made projects include:
 
 + A mini-encyclopedia about my favorite characters
@@ -13,6 +13,7 @@ Self-made projects include:
 + A simple JSON editor
 + A 'proof-of-concept' online-shop
 + A full-stack forum
++ A personal 'recipe book' website
 
 ## What it was written in?
 
