@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.16d10bc5.css",
-    "main.js": "./static/js/main.5286ef5d.js",
+    "main.js": "./static/js/main.4defdd26.js",
     "static/media/background-2.jpg": "./static/media/background-2.80247c86718607b7995e.jpg",
     "static/media/gallery.png": "./static/media/gallery.b16c787b2138ef27dc25.png",
     "static/media/characters.png": "./static/media/characters.28f0518186ab9a111bd3.png",
@@ -9,16 +9,17 @@
     "static/media/corona.png": "./static/media/corona.e56a28e29846321a58ee.png",
     "static/media/marry_house.png": "./static/media/marry_house.2216626490f94f5a1ecd.png",
     "static/media/forum.png": "./static/media/forum.97b9a4c42f5f6ca66557.png",
+    "static/media/cookbook.png": "./static/media/cookbook.336c168cedda6d10f491.png",
     "static/media/game_shop.png": "./static/media/game_shop.543d98b713ded1456cba.png",
     "static/media/dart.png": "./static/media/dart.52da9b11ecfe7a7fe803.png",
     "static/media/json_editor.png": "./static/media/json_editor.f9a766e739e239047a4a.png",
     "static/media/github-mark-white.svg": "./static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "./index.html",
     "main.16d10bc5.css.map": "./static/css/main.16d10bc5.css.map",
-    "main.5286ef5d.js.map": "./static/js/main.5286ef5d.js.map"
+    "main.4defdd26.js.map": "./static/js/main.4defdd26.js.map"
   },
   "entrypoints": [
     "static/css/main.16d10bc5.css",
-    "static/js/main.5286ef5d.js"
+    "static/js/main.4defdd26.js"
   ]
 }
